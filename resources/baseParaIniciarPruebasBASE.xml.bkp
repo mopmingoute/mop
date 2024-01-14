@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<corrida>
+	<parametrosGenerales>
+		<nombre>PRUEBA-PARALELISMO-DIARIO-10AÑOS</nombre>
+		<descripcion>DIARIA</descripcion>
+		<postizacion tipo="interna"></postizacion>
+		<valpostizacion tipo="interna"/>
+		<tipoSimulacion>enHaz</tipoSimulacion>
+		<inicioCorrida>01 01 2020 00:00:00</inicioCorrida>
+		<finCorrida>31 12 2020 23:59:59</finCorrida> 
+		<cantEscenarios>112</cantEscenarios>
+		<tasaAnual>0.1</tasaAnual> <!-- tasa por 1 -->
+		<lineaTiempo unidad="segundos">
+		<inicioTiempo>01 01 2020 00:00:00</inicioTiempo>
+			<periodoIntegracion>
+				<activo>false</activo>
+				<durPeriodoIntegracion>0</durPeriodoIntegracion>
+			</periodoIntegracion>
+			<listaBloques>
+				<bloque>
+					<cantPasos>366</cantPasos> <!--2022-2032-->
+					<durPaso unidad="segundos">86400</durPaso>
+					<intervaloMuestreo unidad="segundos">3600</intervaloMuestreo>
+					<cantPostes>24</cantPostes>
+					<duracionPostes unidad="segundos">3600,3600,3600,3600,3600,3600,3600,3600,3600,3600,3600,3600,3600,3600,3600,3600,3600,3600,3600,3600,3600,3600,3600,3600</duracionPostes>
+					<periodoBloque>0</periodoBloque>
+					<cronologico>false</cronologico>
+				</bloque>
+			</listaBloques>
+		</lineaTiempo>
+		<compsGlobales>
+			<tipoResolucionValoresBellman>incrementos</tipoResolucionValoresBellman>
+			<tipoDemanda>residual</tipoDemanda>
+		</compsGlobales>
+		<rutaSalidas>D:\salidasModeloOp</rutaSalidas>
+		<iteraciones>
+			<maximoIteraciones>1</maximoIteraciones>
+			<numeroIteraciones>1</numeroIteraciones>
+			<criterioParada>porNumeroIteraciones</criterioParada>
+		</iteraciones>
+		<semilla>1354</semilla>
+		<cantSorteosMont><ev tipo="const">5</ev></cantSorteosMont>
+		<escenariosSerializados>TRUE</escenariosSerializados>
+		<salidaTexto>
+			<enerResumen>TRUE</enerResumen>
+			<enercron>TRUE</enercron>
+			<potPoste>TRUE</potPoste>
+			<indPot>TRUE</indPot>
+			<costoResumen>TRUE</costoResumen>
+			<costocron>TRUE</costocron>
+            <costoPoste>TRUE</costoPoste>
+			<indCostoPoste>TRUE</indCostoPoste>
+			<cosmarResumen>TRUE</cosmarResumen>
+			<cosmarCron>TRUE</cosmarCron>
+			<indCosmarCron>TRUE</indCosmarCron>
+			<cantMod>TRUE</cantMod>
+			<indAtriDetallado>TRUE</indAtriDetallado>
+			<salidaDetalladaPaso>TRUE</salidaDetalladaPaso>
+			<costoPasoCron>TRUE</costoPasoCron>
+		</salidaTexto>
+		<salidaSimDet>
+			<salSim>FALSE</salSim>
+			<pasoIni>0</pasoIni>
+			<pasoFin>150</pasoFin>
+			<escIni>1</escIni>
+			<escFin>150</escFin>
+		</salidaSimDet>
+		<salidaOpt>
+			<salOpt>TRUE</salOpt>
+			<pasoIni>90</pasoIni>
+			<pasoFin>120</pasoFin>
+			<estadoIni>0,0,0,0</estadoIni>
+			<estadoFin>5,3,2,2</estadoFin>
+			<sortIni>0</sortIni>
+			<sortFin>3</sortFin>
+		</salidaOpt>
+	</parametrosGenerales>
+	<procesosEstocasticos>
+		<pEstocastico>
+			<nombre>historicoMarkovC20Jun2021</nombre>
+			<tipo>historico</tipo>
+			<tipoSoporte>archivo</tipoSoporte>
+			<discretoExhaustivo>false</discretoExhaustivo>
+			<muestreado>false</muestreado>
+		</pEstocastico>
+		<pEstocastico>
+			<nombre>markovSemC20Jun2021</nombre>
+			<tipo>Markov</tipo>
+			<tipoSoporte>archivo</tipoSoporte>
+			<discretoExhaustivo>true</discretoExhaustivo>
+			<muestreado>false</muestreado>
+		</pEstocastico>
+		<pEstocastico>
+			<nombre>eoloSolBootstrap_serie5anos</nombre>
+			<tipo>bootstrapDiscreto</tipo>
+			<tipoSoporte>archivo</tipoSoporte>
+			<discretoExhaustivo>false</discretoExhaustivo>
+			<muestreado>true</muestreado>
+			<estadosIniciales>(EOLOSOL;1)</estadosIniciales>
+		</pEstocastico>
+		<pEstocastico>
+			<nombre>upm1Bootstrap</nombre>
+			<tipo>bootstrapDiscreto</tipo>
+			<tipoSoporte>archivo</tipoSoporte>
+			<discretoExhaustivo>false</discretoExhaustivo>
+			<muestreado>true</muestreado>
+			<estadosIniciales>(ESTADO-UPM1;1)</estadosIniciales>
+		</pEstocastico>
+		<pEstocastico>
+			<nombre>upm1iniBootstrap</nombre>
+			<tipo>bootstrapDiscreto</tipo>
+			<tipoSoporte>archivo</tipoSoporte>
+			<discretoExhaustivo>false</discretoExhaustivo>
+			<muestreado>true</muestreado>
+			<estadosIniciales>(ESTADO-UPM1ini;1)</estadosIniciales>
+		</pEstocastico>
+		<pEstocastico>
+			<nombre>upm2Bootstrap</nombre>
+			<tipo>bootstrapDiscreto</tipo>
+			<tipoSoporte>archivo</tipoSoporte>
+			<discretoExhaustivo>false</discretoExhaustivo>
+			<muestreado>true</muestreado>
+			<estadosIniciales>(ESTADO-UPM2;1)</estadosIniciales>
+		</pEstocastico>
+		<pEstocastico>
+			<nombre>upm2iniBootstrap</nombre>
+			<tipo>bootstrapDiscreto</tipo>
+			<tipoSoporte>archivo</tipoSoporte>
+			<discretoExhaustivo>false</discretoExhaustivo>
+			<muestreado>true</muestreado>
+			<estadosIniciales>(ESTADO-UPM2ini;1)</estadosIniciales>
+		</pEstocastico>
+		<pEstocastico>
+			<nombre>mdpBootstrap</nombre>
+			<tipo>bootstrapDiscreto</tipo>
+			<tipoSoporte>archivo</tipoSoporte>
+			<discretoExhaustivo>false</discretoExhaustivo>
+			<muestreado>true</muestreado>
+			<estadosIniciales>(ESTADO-MDP;1)</estadosIniciales>
+		</pEstocastico>
+		<pEstocastico>
+			<nombre>biomasaBootstrap</nombre>
+			<tipo>bootstrapDiscreto</tipo>
+			<tipoSoporte>archivo</tipoSoporte>
+			<discretoExhaustivo>false</discretoExhaustivo>
+			<muestreado>true</muestreado>
+			<estadosIniciales>(BIOMASA;1)</estadosIniciales>
+		</pEstocastico>
+		<pEstocastico>
+			<nombre>anioBaseSemanaJun2020</nombre>
+			<tipo>demandaAnioBase</tipo>
+			<tipoSoporte>archivo</tipoSoporte>
+			<discretoExhaustivo>false</discretoExhaustivo>
+			<muestreado>true</muestreado>
+		</pEstocastico>
+	</procesosEstocasticos>
+	<participantes>
+		<generadores>
+			<termicos>
+				<compsPorDefecto>
+					<compMinimosTecnicos><ev tipo="const">SinMinTec</ev></compMinimosTecnicos>
+				</compsPorDefecto>
+			</termicos>
+			<hidraulicos>
+				<compsPorDefecto>
+					<compLago><ev tipo="const">SinLago</ev></compLago>
+					<compCoefEnergetico><ev tipo="const">CoefEnergConstantes</ev></compCoefEnergetico>
+				</compsPorDefecto>
+			</hidraulicos>
+			<centralesAcumulacion>
+				<compsPorDefecto>
+					<compPaso><ev tipo="const">cierraPaso</ev></compPaso>
+				</compsPorDefecto>
+			</centralesAcumulacion>
+		</generadores>
+		<fallas>
+			<compsPorDefecto>
+				<compFalla><ev tipo="const">sinEstado</ev></compFalla>
+			</compsPorDefecto>
+		</fallas>
+		<redElectrica>
+			<compsGenerales>
+				<compUsoRed><ev tipo="const">uninodal</ev></compUsoRed>
+			</compsGenerales>
+			<flotante>barraPrueba1</flotante>
+			<barras>
+				<listaUtilizados>barraPrueba1, barraPrueba2</listaUtilizados>
+				<listaBarras>
+					<barra>	
+						<datosBarra>
+						<nombre>barraPrueba1</nombre>
+						<salidaDetallada>true</salidaDetallada>
+						</datosBarra>
+					</barra>
+					<barra>
+						<datosBarra>
+							<nombre>barraPrueba2</nombre>
+							<salidaDetallada>true</salidaDetallada>
+						</datosBarra>
+					</barra>
+				</listaBarras>
+			</barras>
+		</redElectrica>
+	</participantes>
+</corrida>

@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<!--
+  ~ MOP Copyright (C) 2023 UTE Corporation
+  ~
+  ~ EditorDucto.fxml is part of MOP.
+  ~
+  ~ MOP is free software: you can redistribute it and/or modify it under the terms
+  ~ of the GNU General Public License as published by the Free Software Foundation, either
+  ~ version 3 of the License, or (at your option) any later version.
+  ~
+  ~ MOP is distributed in the hope that it will be useful, but WITHOUT ANY
+  ~ WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+  ~ PARTICULAR PURPOSE. See the GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License along with MOP. If
+  ~ not, see <https://www.gnu.org/licenses/>.
+  -->
+
+<AnchorPane prefHeight="301.0" prefWidth="861.0" style="-fx-background-color: #d7ddd9; -fx-border-color: BLACK; -fx-border-width: 0px 0px 2px 0px;" stylesheets="@test.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+        <children>
+            <GridPane fx:id="gridPane11" prefHeight="539.0" prefWidth="861.0">
+                <columnConstraints>
+                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="220.0" minWidth="220.0" prefWidth="220.0" />
+                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="95.0" prefWidth="95.0" />
+                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="95.0" prefWidth="95.0" />
+                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="95.0" prefWidth="95.0" />
+                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="95.0" prefWidth="95.0" />
+                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="95.0" prefWidth="95.0" />
+                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="95.0" prefWidth="95.0" />
+                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" prefWidth="95.0" />
+                </columnConstraints>
+                <rowConstraints>
+                    <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="25.0" vgrow="SOMETIMES" />
+                    <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                    <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="25.0" vgrow="SOMETIMES" />
+                    <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                    <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                    <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                    <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                    <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                    <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                    <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                    <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                    <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                    <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                </rowConstraints>
+                <children>
+                    <JFXButton fx:id="inputMantProgEV" buttonType="RAISED" prefHeight="31.0" prefWidth="31.0" ripplerFill="WHITE" style="-fx-background-color: #27864d;" text="EV" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="12">
+                        <font>
+                            <Font name="System Bold" size="12.0" />
+                        </font>
+                        <GridPane.margin>
+                            <Insets left="5.0" />
+                        </GridPane.margin>
+                    </JFXButton>
+                    <Label text="Mantenimiento Programado:" GridPane.halignment="RIGHT" GridPane.rowIndex="12">
+                        <font>
+                            <Font size="15.0" />
+                        </font>
+                        <GridPane.margin>
+                            <Insets left="10.0" right="5.0" />
+                        </GridPane.margin>
+                    </Label>
+                    <Label text="Nombre:" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+                        <font>
+                            <Font size="15.0" />
+                        </font>
+                        <GridPane.margin>
+                            <Insets left="10.0" right="5.0" />
+                        </GridPane.margin>
+                    </Label>
+                    <Label text="Barra 1:" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
+                        <font>
+                            <Font size="15.0" />
+                        </font>
+                        <GridPane.margin>
+                            <Insets left="10.0" right="5.0" />
+                        </GridPane.margin>
+                    </Label>
+                    <Label text="Barra 2:" GridPane.columnIndex="4" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
+                        <font>
+                            <Font size="15.0" />
+                        </font>
+                        <GridPane.margin>
+                            <Insets left="10.0" right="5.0" />
+                        </GridPane.margin>
+                    </Label>
+                    <JFXTextField fx:id="inputNombre" focusColor="#27864d" maxWidth="180.0" minWidth="180.0" prefWidth="180.0" style="-fx-background-color: WHITE; -fx-font-size: 15px;" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="1">
+                        <GridPane.margin>
+                            <Insets left="5.0" right="5.0" />
+                        </GridPane.margin>
+                        <font>
+                            <Font size="15.0" />
+                        </font>
+                    </JFXTextField>
+                    <JFXTextField fx:id="inputMantProg" focusColor="#27864d" maxWidth="85.0" minWidth="85.0" prefWidth="85.0" style="-fx-background-color: WHITE; -fx-font-size: 15px;" GridPane.columnIndex="1" GridPane.rowIndex="12">
+                        <font>
+                            <Font size="15.0" />
+                        </font>
+                        <GridPane.margin>
+                            <Insets left="5.0" />
+                        </GridPane.margin>
+                    </JFXTextField>
+                    <Separator prefWidth="200.0" GridPane.columnSpan="2147483647" GridPane.rowIndex="11" />
+                    <Separator prefWidth="200.0" GridPane.columnSpan="2147483647" GridPane.rowIndex="7" />
+                    <Label text="Disponibilidad Módulos:" GridPane.halignment="RIGHT" GridPane.rowIndex="8">
+                        <font>
+                            <Font name="System Bold" size="15.0" />
+                        </font>
+                        <GridPane.margin>
+                            <Insets right="5.0" />
+                        </GridPane.margin>
+                    </Label>
+                    <Label text="Cantidad Módulos Inicial:" GridPane.halignment="RIGHT" GridPane.rowIndex="9">
+                        <font>
+                            <Font size="15.0" />
+                        </font>
+                        <GridPane.margin>
+                            <Insets right="5.0" />
+                        </GridPane.margin>
+                    </Label>
+                    <Label text="Tiempo Medio de Arreglo:" GridPane.halignment="RIGHT" GridPane.rowIndex="10">
+                        <font>
+                            <Font size="15.0" />
+                        </font>
+                        <GridPane.margin>
+                            <Insets right="5.0" />
+                        </GridPane.margin>
+                    </Label>
+                    <JFXComboBox fx:id="inputDispModUnidad" focusColor="#27864d" maxWidth="180.0" minWidth="180.0" prefHeight="31.0" prefWidth="180.0" promptText="Elija..." style="-fx-background-color: WHITE; -fx-font-size: 15px;" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="8">
+                        <GridPane.margin>
+                            <Insets left="5.0" />
+                        </GridPane.margin>
+                    </JFXComboBox>
+                    <JFXTextField fx:id="inputCantModIni" focusColor="#27864d" maxWidth="85.0" minWidth="85.0" prefWidth="85.0" style="-fx-background-color: WHITE; -fx-font-size: 15px;" GridPane.columnIndex="1" GridPane.rowIndex="9">
+                        <font>
+                            <Font size="15.0" />
+                        </font>
+                        <GridPane.margin>
+                            <Insets left="5.0" />
+                        </GridPane.margin>
+                    </JFXTextField>
+                    <JFXTextField fx:id="inputTMedioArreglo" focusColor="#27864d" maxWidth="85.0" minWidth="85.0" prefWidth="85.0" style="-fx-background-color: WHITE; -fx-font-size: 15px;" GridPane.columnIndex="1" GridPane.rowIndex="10">
+                        <font>
+                            <Font size="15.0" />
+                        </font>
+                        <GridPane.margin>
+                            <Insets left="5.0" />
+                        </GridPane.margin>
+                    </JFXTextField>
+                    <JFXTextField fx:id="inputDispMedia" focusColor="#27864d" maxWidth="85.0" minWidth="85.0" prefWidth="85.0" style="-fx-background-color: WHITE; -fx-font-size: 15px;" GridPane.columnIndex="5" GridPane.rowIndex="9">
+                        <font>
+                            <Font size="15.0" />
+                        </font>
+                        <GridPane.margin>
+                            <Insets left="5.0" />
+                        </GridPane.margin>
+                    </JFXTextField>
+                    <JFXComboBox fx:id="inputTMedioArregloUnidad" focusColor="#27864d" maxWidth="85.0" minWidth="85.0" prefWidth="85.0" promptText="Elija..." style="-fx-background-color: WHITE; -fx-font-size: 15px;" GridPane.columnIndex="2" GridPane.rowIndex="10">
+                        <GridPane.margin>
+                            <Insets left="5.0" />
+                        </GridPane.margin>
+                    </JFXComboBox>
+                    <JFXButton fx:id="inputDispMediaEV" buttonType="RAISED" prefHeight="31.0" prefWidth="31.0" ripplerFill="WHITE" style="-fx-background-color: #27864d;" text="EV" textFill="WHITE" GridPane.columnIndex="6" GridPane.rowIndex="9">
+                        <font>
+                            <Font name="System Bold" size="12.0" />
+                        </font>
+                        <GridPane.margin>
+                            <Insets left="5.0" />
+                        </GridPane.margin>
+                    </JFXButton>
+                    <JFXButton fx:id="inputTMedioArregloEV" buttonType="RAISED" prefHeight="31.0" prefWidth="31.0" ripplerFill="WHITE" style="-fx-background-color: #27864d;" text="EV" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="10">
+                        <font>
+                            <Font name="System Bold" size="12.0" />
+                        </font>
+                        <GridPane.margin>
+                            <Insets left="5.0" />
+                        </GridPane.margin>
+                    </JFXButton>
+                    <Label text="Disponibilidad Media:" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.halignment="RIGHT" GridPane.rowIndex="9">
+                        <font>
+                            <Font size="15.0" />
+                        </font>
+                        <GridPane.margin>
+                            <Insets right="5.0" />
+                        </GridPane.margin>
+                    </Label>
+                    <Label text="Costo Fijo (USD/MWh):" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.halignment="RIGHT" GridPane.rowIndex="12">
+                        <font>
+                            <Font size="15.0" />
+                        </font>
+                        <GridPane.margin>
+                            <Insets right="5.0" />
+                        </GridPane.margin>
+                    </Label>
+                    <JFXTextField fx:id="inputCostoFijo" focusColor="#27864d" maxWidth="85.0" minWidth="85.0" prefWidth="85.0" style="-fx-background-color: WHITE; -fx-font-size: 15px;" GridPane.columnIndex="5" GridPane.rowIndex="12">
+                        <font>
+                            <Font size="15.0" />
+                        </font>
+                        <GridPane.margin>
+                            <Insets left="5.0" />
+                        </GridPane.margin>
+                    </JFXTextField>
+                    <JFXButton fx:id="inputCostoFijoEV" buttonType="RAISED" prefHeight="31.0" prefWidth="31.0" ripplerFill="WHITE" style="-fx-background-color: #27864d;" text="EV" textFill="WHITE" GridPane.columnIndex="6" GridPane.rowIndex="12">
+                        <font>
+                            <Font name="System Bold" size="12.0" />
+                        </font>
+                        <GridPane.margin>
+                            <Insets left="5.0" />
+                        </GridPane.margin>
+                    </JFXButton>
+                    <JFXComboBox fx:id="inputBarra1" focusColor="#27864d" maxWidth="180.0" minWidth="180.0" prefWidth="180.0" promptText="Elija..." style="-fx-background-color: WHITE; -fx-font-size: 15px;" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                        <GridPane.margin>
+                            <Insets left="5.0" />
+                        </GridPane.margin>
+                    </JFXComboBox>
+                    <JFXComboBox fx:id="inputBarra2" focusColor="#27864d" maxWidth="180.0" minWidth="180.0" prefWidth="180.0" promptText="Elija..." style="-fx-background-color: WHITE; -fx-font-size: 15px;" GridPane.columnIndex="5" GridPane.rowIndex="3">
+                        <GridPane.margin>
+                            <Insets left="5.0" />
+                        </GridPane.margin>
+                    </JFXComboBox>
+                    <Label text="Capacidad 1 2:" GridPane.halignment="RIGHT" GridPane.rowIndex="5">
+                        <font>
+                            <Font size="15.0" />
+                        </font>
+                        <GridPane.margin>
+                            <Insets right="5.0" />
+                        </GridPane.margin>
+                    </Label>
+                    <Label text="Capacidad 2 1:" GridPane.halignment="RIGHT" GridPane.rowIndex="6">
+                        <font>
+                            <Font size="15.0" />
+                        </font>
+                        <GridPane.margin>
+                            <Insets right="5.0" />
+                        </GridPane.margin>
+                    </Label>
+                    <JFXTextField fx:id="inputCapacidad12" focusColor="#27864d" maxWidth="85.0" minWidth="85.0" prefWidth="85.0" style="-fx-background-color: WHITE; -fx-font-size: 15px;" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                        <font>
+                            <Font size="15.0" />
+                        </font>
+                        <GridPane.margin>
+                            <Insets left="5.0" />
+                        </GridPane.margin>
+                    </JFXTextField>
+                    <JFXTextField fx:id="inputCapacidad21" focusColor="#27864d" maxWidth="85.0" minWidth="85.0" prefWidth="85.0" style="-fx-background-color: WHITE; -fx-font-size: 15px;" GridPane.columnIndex="1" GridPane.rowIndex="6">
+                        <font>
+                            <Font size="15.0" />
+                        </font>
+                        <GridPane.margin>
+                            <Insets left="5.0" />
+                        </GridPane.margin>
+                    </JFXTextField>
+                    <JFXButton fx:id="inputCapacidad12EV" buttonType="RAISED" prefHeight="31.0" prefWidth="31.0" ripplerFill="WHITE" style="-fx-background-color: #27864d;" text="EV" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                        <font>
+                            <Font name="System Bold" size="12.0" />
+                        </font>
+                        <GridPane.margin>
+                            <Insets left="5.0" />
+                        </GridPane.margin>
+                    </JFXButton>
+                    <JFXButton fx:id="inputCapacidad21EV" buttonType="RAISED" prefHeight="31.0" prefWidth="31.0" ripplerFill="WHITE" style="-fx-background-color: #27864d;" text="EV" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                        <font>
+                            <Font name="System Bold" size="12.0" />
+                        </font>
+                        <GridPane.margin>
+                            <Insets left="5.0" />
+                        </GridPane.margin>
+                    </JFXButton>
+                    <Label text="Pérdidas 1 2:" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.halignment="RIGHT" GridPane.rowIndex="5">
+                        <font>
+                            <Font size="15.0" />
+                        </font>
+                        <GridPane.margin>
+                            <Insets right="5.0" />
+                        </GridPane.margin>
+                    </Label>
+                    <JFXTextField fx:id="inputPerdidas12" focusColor="#27864d" maxWidth="85.0" minWidth="85.0" prefWidth="85.0" style="-fx-background-color: WHITE; -fx-font-size: 15px;" GridPane.columnIndex="5" GridPane.rowIndex="5">
+                        <font>
+                            <Font size="15.0" />
+                        </font>
+                        <GridPane.margin>
+                            <Insets left="5.0" />
+                        </GridPane.margin>
+                    </JFXTextField>
+                    <JFXTextField fx:id="inputPerdidas21" focusColor="#27864d" maxWidth="85.0" minWidth="85.0" prefWidth="85.0" style="-fx-background-color: WHITE; -fx-font-size: 15px;" GridPane.columnIndex="5" GridPane.rowIndex="6">
+                        <font>
+                            <Font size="15.0" />
+                        </font>
+                        <GridPane.margin>
+                            <Insets left="5.0" />
+                        </GridPane.margin>
+                    </JFXTextField>
+                    <JFXButton fx:id="inputPerdidas12EV" buttonType="RAISED" prefHeight="31.0" prefWidth="31.0" ripplerFill="WHITE" style="-fx-background-color: #27864d;" text="EV" textFill="WHITE" GridPane.columnIndex="6" GridPane.rowIndex="5">
+                        <font>
+                            <Font name="System Bold" size="12.0" />
+                        </font>
+                        <GridPane.margin>
+                            <Insets left="5.0" />
+                        </GridPane.margin>
+                    </JFXButton>
+                    <JFXButton fx:id="inputPerdidas21EV" buttonType="RAISED" prefHeight="31.0" prefWidth="31.0" ripplerFill="WHITE" style="-fx-background-color: #27864d;" text="EV" textFill="WHITE" GridPane.columnIndex="6" GridPane.rowIndex="6">
+                        <font>
+                            <Font name="System Bold" size="12.0" />
+                        </font>
+                        <GridPane.margin>
+                            <Insets left="5.0" />
+                        </GridPane.margin>
+                    </JFXButton>
+                    <Label text="Pérdidas 2 1:" GridPane.columnIndex="4" GridPane.halignment="RIGHT" GridPane.rowIndex="6">
+                        <font>
+                            <Font size="15.0" />
+                        </font>
+                        <GridPane.margin>
+                            <Insets right="5.0" />
+                        </GridPane.margin>
+                    </Label>
+                    <Label text="Salida Detallada:" GridPane.halignment="RIGHT" GridPane.rowIndex="14">
+                        <font>
+                            <Font size="15.0" />
+                        </font>
+                        <GridPane.margin>
+                            <Insets right="5.0" />
+                        </GridPane.margin>
+                    </Label>
+                    <JFXCheckBox fx:id="inputSalidaDetallada" text=" " GridPane.columnIndex="1" GridPane.rowIndex="14">
+                        <GridPane.margin>
+                            <Insets left="5.0" />
+                        </GridPane.margin>
+                    </JFXCheckBox>
+            <JFXTextField fx:id="inputCantModInst" focusColor="#27864d" maxWidth="85.0" minWidth="85.0" prefWidth="85.0" style="-fx-background-color: WHITE; -fx-font-size: 15px;" GridPane.columnIndex="5" GridPane.rowIndex="1">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </JFXTextField>
+            <JFXButton fx:id="inputCantModInstEV" buttonType="RAISED" prefHeight="31.0" prefWidth="31.0" ripplerFill="WHITE" style="-fx-background-color: #27864d;" text="EV" textFill="WHITE" GridPane.columnIndex="6" GridPane.rowIndex="1">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </JFXButton>
+            <Label alignment="CENTER_RIGHT" prefHeight="21.0" prefWidth="182.0" text="Cant. Módulos Instalados:" textAlignment="RIGHT" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets right="5.0" />
+               </GridPane.margin>
+            </Label>
+                </children>
+            </GridPane>
+        </children>
+    </AnchorPane>

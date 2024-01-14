@@ -1,0 +1,562 @@
+/*
+ * MOP Copyright (C) 2023 UTE Corporation
+ *
+ * test.css is part of MOP.
+ *
+ * MOP is free software: you can redistribute it and/or modify it under the terms
+ * of the GNU General Public License as published by the Free Software Foundation, either
+ * version 3 of the License, or (at your option) any later version.
+ *
+ * MOP is distributed in the hope that it will be useful, but WITHOUT ANY
+ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+ * PARTICULAR PURPOSE. See the GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License along with MOP. If
+ * not, see <https://www.gnu.org/licenses/>.
+ */
+
+/*TAB PANE*/
+.jfx-tab-pane .tab-header-background {
+    -fx-background-color: #27864d;
+}
+.jfx-tab-pane .headers-region > .tab > .jfx-rippler {
+    -jfx-rippler-fill: WHITE;
+}
+
+.jfx-tab-pane .headers-region .tab-selected-line {
+    -fx-background-color: WHITE;
+}
+
+
+/*TEXT FIELD*/
+.text-field {
+    /*-fx-background-color: #a9a9a9 , white , white;*/
+    -fx-background-color: WHITE;
+    /*-fx-background-insets: 0 -1 -1 -1, 0 0 0 0, 0 -1 3 -1;*/
+    /*-fx-background-insets: 10,10;*/
+    /*-fx-border-color: #a9a9a9;*/
+}
+
+.text-field:focused {
+    /*-fx-background-color: #a9a9a9 , white , white;*/
+    -fx-background-color: WHITE;
+    /*-fx-background-insets: 0 -1 -1 -1, 0 0 0 0, 0 -1 3 -1;*/
+}
+
+/*SCROLL PANE*/
+.scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+/*TITLED PANE*/
+.titled-pane > .title {
+    /*-fx-background-color: transparent;*/
+    -fx-border: 0;
+    -fx-background-color: #27864d;
+    -fx-pref-height: 30; // I make this small double number because I dont want to use the title of titledpane
+    /*-fx-font-weight: bold;*/
+    -fx-border-radius: 0px;
+    -fx-background-radius: 0px;
+    -fx-text-alignment: center;
+}
+
+.titled-pane > .title > .text {
+    -fx-fill: WHITE;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+}
+
+.titled-pane > .title > .arrow-button .arrow {
+    /*-fx-background-color: transparent;
+    -fx-border-color: transparent;*/
+    -fx-background-color: WHITE;
+    -fx-border-color: WHITE;
+    /*-fx-padding: 0 0 0 -10;*/ // this is little tricky when you want to hide the arrow and do not know how to hide this arrow
+}
+
+.titled-pane > .content {
+    /*-fx-background-color: #b3dabd;*/
+    -fx-background-color: #d7ddd9;
+    -fx-padding: 0 -1 -1 -1 ; // this padding setting will help you to ignore the U border when you try to set the background color for the content of titledpane. if you don't do this, because the default css of titledpane, it will appear the U border.
+    -fx-background-insets: 0 0 0 0; // well you can add this line or not, depend on you
+}
+
+
+/*TREE TABLE VIEW*/
+.tree-table-view{
+    -fx-tree-table-color: rgba(0, 150, 0, 0.8);
+    -fx-tree-table-rippler-color : rgba(255, 0, 0, 0.9);
+}
+.tree-table-view:focused .tree-table-row-cell:selected {
+    -fx-background-color: -fx-tree-table-color  ;
+    -fx-table-cell-border-color: -fx-tree-table-color;
+}
+
+.tree-table-view:focused .tree-table-row-cell:selected .tree-table-cell{
+    -fx-text-fill: white;
+}
+
+.tree-table-view .jfx-rippler {
+    -fx-rippler-fill: -fx-tree-table-rippler-color;
+}
+
+.tree-table-view .column-header ,
+.tree-table-view .column-header-background,
+.tree-table-view .column-header-background .filler{
+    /*-fx-background-color:TRANSPARENT;*/
+    -fx-background-color:#27864d;
+}
+.table-view .column-header ,
+.table-view .column-header-background,
+.table-view .column-header-background .filler{
+    /*-fx-background-color:TRANSPARENT;*/
+    -fx-background-color:#27864d;
+}
+.table-view .column-header{
+    -fx-border-width : 0 .5 0 .5;
+    -fx-border-color: WHITE;
+}
+
+.tree-table-view .column-header{
+    -fx-border-width : 0 1 0 1;
+    /*-fx-border-color: #F3F3F3;*/
+    -fx-border-color: BLACK;
+}
+
+.tree-table-view .column-header .label {
+    /*-fx-text-fill : #949494;*/
+    -fx-text-fill : WHITE;
+    -fx-font-size: 15px;
+    -fx-padding : 16 0 16 0 ;
+}
+.table-view .column-header .label {
+    /*-fx-text-fill : #949494;*/
+    -fx-text-fill : WHITE;
+    -fx-font-size: 15px;
+    -fx-padding : 12 0 12 0 ;
+}
+
+.tree-table-view .column-header .arrow, .tree-table-view .column-header .sort-order-dot{
+    /*-fx-background-color : #949494;*/
+    -fx-background-color : WHITE;
+}
+.table-view .column-header .arrow, .table-view .column-header .sort-order-dot{
+    /*-fx-background-color : #949494;*/
+    -fx-background-color : WHITE;
+}
+
+.tree-table-view .column-header:last-visible {
+    -fx-border-width: 0 2 0 1;
+}
+
+.tree-table-view .column-header-background{
+    -fx-border-width : 0 0.0 1 0;
+    -fx-border-color:#F3F3F3;
+}
+
+.tree-table-view .tree-table-cell{
+    -fx-border-width:0 0 0 0;
+    /*-fx-padding : 16 0 16 0 ;*/
+    -fx-font-size: 15px;
+}
+.table-view .table-cell{
+    -fx-border-width:0 .5 0 .5;
+    -fx-padding : 12 0 12 10 ;
+    -fx-font-size: 15px;
+}
+
+.tree-table-view .column-overlay{
+    -fx-background-color: -fx-tree-table-color;
+}
+
+.tree-table-view .column-resize-line, .tree-table-view .column-drag-header{
+    /*-fx-background-color: -fx-tree-table-rippler-color;*/
+    -fx-background-color: BLACK;
+}
+
+.tree-table-view:focused {
+    /*-fx-background-color: -fx-tree-table-color,-fx-box-border,-fx-control-inner-background;*/
+    -fx-background-insets: -1.4, 0, 1;
+    -fx-background-radius: 1.4, 0, 0;
+    /*....*/
+    -fx-padding: 1; /* 0.083333em; */
+}
+
+.tree-table-row-cell > .tree-disclosure-node > .arrow {
+    -fx-background-color: -fx-text-fill;
+    /*-fx-padding: 0.333333em 0.229em 0.333333em 0.229em;  4 */
+    -fx-shape: "M 0 -3.5 L 4 0 L 0 3.5 z";
+}
+.tree-table-row-cell .jfx-text-field{
+    -fx-focus-color: rgba(240,40,40);
+}
+.tree-table-row-cell:odd{
+    -fx-background-color: #f1ebeb;
+}
+
+.tree-table .column {
+    -fx-border-color: red;
+    -fx-table-cell-border-color:red;
+}
+/*
+
+.tree-table-row-cell{
+-fx-border-color: red;
+-fx-table-cell-border-color:red;}
+.tree-table-view{
+-fx-border-color: red;}*/
+
+/*
+
+*/
+/*BUTTON*//*
+
+.jfx-button{
+    -jfx-button-type: RAISED;
+    -fx-background-color: #27864d;
+}
+
+*/
+/*LABEL*//*
+
+.label{
+    -fx-font-size: 15px;
+}
+
+*/
+
+
+/*TEXT FIELD*/
+.jfx-text-field{
+    -jfx-focus-color: #27864d;
+    -fx-font-size: 15px;
+}
+
+
+/*COMBO BOX*/
+.jfx-combo-box{
+    -jfx-focus-color: #27864d;
+    -fx-background-color: WHITE;
+    -fx-font-size: 15px;
+}
+
+
+/*DATE PICKER*/
+.jfx-date-picker {
+    /*-jfx-focus-color: #27864d;
+    -jfx-default-color: #27864d;
+    -fx-default-color: #27864d;*/
+    -fx-font-size: 15px;
+}
+
+
+/*RADIO BUTTON*/
+.radio-button{
+    -fx-font-size: 15px;
+}
+
+/*PROGRESS BAR*/
+.jfx-progress-bar{
+    -fx-border: 2px;
+    -fx-border-color: BLACK;
+}
+
+/*ETIQUETA TIPO PARTICIPANTE*/
+.label_eolico{
+    -fx-background-color: #38a5e0;
+    -fx-min-width: 38px;
+    -fx-min-height: 38px;
+    -fx-width: 38px;
+    -fx-height: 38px;
+    -fx-pref-width: 38px;
+    -fx-pref-height: 38px;
+    -fx-max-width: 38px;
+    -fx-max-height: 38px;
+    -jfx-button-type: RAISED;
+    -jfx-rippler-fill: WHITE;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+    -fx-text-fill: WHITE;
+}
+
+.label_solar{
+    -fx-background-color: #e87c2a;
+    -fx-min-width: 38px;
+    -fx-min-height: 38px;
+    -fx-width: 38px;
+    -fx-height: 38px;
+    -fx-pref-width: 38px;
+    -fx-pref-height: 38px;
+    -fx-max-width: 38px;
+    -fx-max-height: 38px;
+    -jfx-button-type: RAISED;
+    -jfx-rippler-fill: WHITE;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+    -fx-text-fill: WHITE;
+}
+
+.label_termico{
+    -fx-background-color: #c91717;
+    -fx-min-width: 38px;
+    -fx-min-height: 38px;
+    -fx-width: 38px;
+    -fx-height: 38px;
+    -fx-pref-width: 38px;
+    -fx-pref-height: 38px;
+    -fx-max-width: 38px;
+    -fx-max-height: 38px;
+    -jfx-button-type: RAISED;
+    -jfx-rippler-fill: WHITE;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+    -fx-text-fill: WHITE;
+}
+
+.label_hidraulico{
+    -fx-background-color: #27468d;
+    -fx-min-width: 38px;
+    -fx-min-height: 38px;
+    -fx-width: 38px;
+    -fx-height: 38px;
+    -fx-pref-width: 38px;
+    -fx-pref-height: 38px;
+    -fx-max-width: 38px;
+    -fx-max-height: 38px;
+    -jfx-button-type: RAISED;
+    -jfx-rippler-fill: WHITE;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+    -fx-text-fill: WHITE;
+}
+
+.label_central_acumulacion{
+    -fx-background-color: #aba955;
+    -fx-min-width: 38px;
+    -fx-min-height: 38px;
+    -fx-width: 38px;
+    -fx-height: 38px;
+    -fx-pref-width: 38px;
+    -fx-pref-height: 38px;
+    -fx-max-width: 38px;
+    -fx-max-height: 38px;
+    -jfx-button-type: RAISED;
+    -jfx-rippler-fill: WHITE;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+    -fx-text-fill: WHITE;
+}
+
+.label_demanda{
+    -fx-background-color: #784b2b;
+    -fx-min-width: 38px;
+    -fx-min-height: 38px;
+    -fx-width: 38px;
+    -fx-height: 38px;
+    -fx-pref-width: 38px;
+    -fx-pref-height: 38px;
+    -fx-max-width: 38px;
+    -fx-max-height: 38px;
+    -jfx-button-type: RAISED;
+    -jfx-rippler-fill: WHITE;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+    -fx-text-fill: WHITE;
+}
+
+.label_falla{
+    -fx-background-color: #228c67;
+    -fx-min-width: 38px;
+    -fx-min-height: 38px;
+    -fx-width: 38px;
+    -fx-height: 38px;
+    -fx-pref-width: 38px;
+    -fx-pref-height: 38px;
+    -fx-max-width: 38px;
+    -fx-max-height: 38px;
+    -jfx-button-type: RAISED;
+    -jfx-rippler-fill: WHITE;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+    -fx-text-fill: WHITE;
+}
+
+.label_impo_expo{
+    -fx-background-color: #4d8006;
+    -fx-min-width: 38px;
+    -fx-min-height: 38px;
+    -fx-width: 38px;
+    -fx-height: 38px;
+    -fx-pref-width: 38px;
+    -fx-pref-height: 38px;
+    -fx-max-width: 38px;
+    -fx-max-height: 38px;
+    -jfx-button-type: RAISED;
+    -jfx-rippler-fill: WHITE;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+    -fx-text-fill: WHITE;
+}
+
+.label_combustible{
+    -fx-background-color: #065180;
+    -fx-min-width: 38px;
+    -fx-min-height: 38px;
+    -fx-width: 38px;
+    -fx-height: 38px;
+    -fx-pref-width: 38px;
+    -fx-pref-height: 38px;
+    -fx-max-width: 38px;
+    -fx-max-height: 38px;
+    -jfx-button-type: RAISED;
+    -jfx-rippler-fill: WHITE;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+    -fx-text-fill: WHITE;
+}
+
+.label_impacto{
+    -fx-background-color: #401078;
+    -fx-min-width: 38px;
+    -fx-min-height: 38px;
+    -fx-width: 38px;
+    -fx-height: 38px;
+    -fx-pref-width: 38px;
+    -fx-pref-height: 38px;
+    -fx-max-width: 38px;
+    -fx-max-height: 38px;
+    -jfx-button-type: RAISED;
+    -jfx-rippler-fill: WHITE;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+    -fx-text-fill: WHITE;
+}
+
+.label_contrato{
+    -fx-background-color: #940925;
+    -fx-min-width: 38px;
+    -fx-min-height: 38px;
+    -fx-width: 38px;
+    -fx-height: 38px;
+    -fx-pref-width: 38px;
+    -fx-pref-height: 38px;
+    -fx-max-width: 38px;
+    -fx-max-height: 38px;
+    -jfx-button-type: RAISED;
+    -jfx-rippler-fill: WHITE;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+    -fx-text-fill: WHITE;
+}
+
+.btn_edit_part{
+    /*-fx-background-color:  #27864d;*/
+    -fx-min-width: 30px;
+    -fx-min-height: 30px;
+    -fx-width: 30px;
+    -fx-height: 30px;
+    -fx-pref-width: 30px;
+    -fx-pref-height: 30px;
+    -fx-max-width: 30px;
+    -fx-max-height: 30px;
+    -jfx-button-type: RAISED;
+    -jfx-rippler-fill: WHITE;
+    -fx-font-weight: bold;
+    /*-fx-font-size: 15px;*/
+    -fx-font-size: 25px;
+    -fx-text-fill: WHITE;
+    /*-fx-background-radius: 15;
+    -fx-border-radius: 15;*/
+}
+
+.btn_clone_part{
+    /*-fx-background-color:   #cc9e15;*/
+    -fx-min-width: 30px;
+    -fx-min-height: 30px;
+    -fx-width: 30px;
+    -fx-height: 30px;
+    -fx-pref-width: 30px;
+    -fx-pref-height: 30px;
+    -fx-max-width: 30px;
+    -fx-max-height: 30px;
+    -jfx-button-type: RAISED;
+    -jfx-rippler-fill: WHITE;
+    -fx-font-weight: bold;
+    /*-fx-font-size: 15px;*/
+    -fx-font-size: 25px;
+    -fx-text-fill: WHITE;
+}
+
+.btn_del_part{
+    /*-fx-background-color:   #c91717;*/
+    -fx-min-width: 30px;
+    -fx-min-height: 30px;
+    -fx-width: 30px;
+    -fx-height: 30px;
+    -fx-pref-width: 30px;
+    -fx-pref-height: 30px;
+    -fx-max-width: 30px;
+    -fx-max-height: 30px;
+    -jfx-button-type: RAISED;
+    -jfx-rippler-fill: WHITE;
+    -fx-font-weight: bold;
+    /*-fx-font-size: 15px;*/
+        -fx-font-size: 25px;
+    -fx-text-fill: WHITE;
+}
+
+.tooltip {
+    /*-fx-text-fill: red;*/
+    /*-fx-background: rgba(255,230,230);
+    -fx-background-color: rgba(30,30,30,0.8);
+    -fx-background-radius: 6px;
+    -fx-background-insets: 0;
+    -fx-padding: 0.667em 0.75em 0.667em 0.75em; *//* 10px *//*
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.5) , 10, 0.0 , 0 , 3 );
+    -fx-font-size: 0.85em;*/
+}
+
+
+
+.btn_reporte{
+    -fx-background-color: #a79f9f;
+    -fx-pref-width: 320px;
+    -jfx-button-type: RAISED;
+    -jfx-rippler-fill: WHITE;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+    -fx-text-fill: WHITE;
+}
+
+.btn_reporte:hover{
+    -fx-background-color: #27864d;
+}
+
+.button:hover .glyph-icon-edit{
+    -fx-text-fill: #D6A712;
+    -fx-fill: #D6A712;
+}
+
+.button:hover .glyph-icon-clone{
+    -fx-text-fill: green;
+    -fx-fill: green;
+}
+
+.button:hover .glyph-icon-delete{
+    -fx-text-fill: #c91717;
+    -fx-fill: #c91717;
+}
+
+.time_line_button {
+    /*-fx-border-size: 14px;*/
+    -fx-border-color: black;
+    /*-fx-focused-color : black;
+    -fx-focus-color : black;*/
+    /*-fx-background-insets: -4, -1, 2, 4;*/
+    /*-fx-inner-border: black;*/
+    /*-fx-faint-focus-color: black;*/
+    -fx-border-width: 4 4 4 4;
+    /*-fx-background-color: black;*/
+    -fx-border-radius: 2.7pt;
+    -fx-background-radius: 2.7pt;
+}

@@ -1,0 +1,15 @@
+NOMBRE_ESTIMACION    anioBaseSemanaMayo23ConVE_45
+USO_SIMULACION   SI
+USO_OPTIMIZACION  SI
+PROC_ASOCIADO_EN_OPTIM   // No se carga nada porque no tiene otro proceso asociado en optimización
+USA_TRANSFORMACIONES   NO
+NOMBRES_VARIABLES  DEM_CON_VE_150
+NOMBRES_VARS_ESTADO  
+USA_VARS_ESTADO_EN_OPTIM  NO    // Si el proceso no se usa en la optimización el dato es ignorado.
+DISCRETO_EXHAUSTIVO   NO
+TIENE_VE_CONTINUAS  NO    // Si tiene variables de estado continuas y el proceso se usa EN OPTIMIZACION es necesario leer un archivo con sus discretizaciones.
+PRIORIDAD_SORTEOS
+NOMBRE_PASO    SEMANA
+TIENE_VARS_EXOGENAS  NO
+NOMBRES_VAR_EXOGENAS    
+NOMBRES_PROCESOS_EXOGENAS

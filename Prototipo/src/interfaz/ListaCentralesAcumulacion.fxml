@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import de.jensd.fx.glyphs.materialicons.MaterialIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<!--
+  ~ MOP Copyright (C) 2023 UTE Corporation
+  ~
+  ~ ListaCentralesAcumulacion.fxml is part of MOP.
+  ~
+  ~ MOP is free software: you can redistribute it and/or modify it under the terms
+  ~ of the GNU General Public License as published by the Free Software Foundation, either
+  ~ version 3 of the License, or (at your option) any later version.
+  ~
+  ~ MOP is distributed in the hope that it will be useful, but WITHOUT ANY
+  ~ WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+  ~ PARTICULAR PURPOSE. See the GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License along with MOP. If
+  ~ not, see <https://www.gnu.org/licenses/>.
+  -->
+
+<TitledPane animated="false" prefWidth="513.0" stylesheets="@test.css" text="Centrales Acumulación" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefWidth="0.0">
+            <children>
+                <GridPane fx:id="gridPane" layoutX="29.0" prefWidth="513.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="75.0" minWidth="75.0" prefWidth="75.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="40.0" minWidth="40.0" prefWidth="40.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="40.0" minWidth="40.0" prefWidth="40.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="40.0" minWidth="40.0" prefWidth="40.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <JFXCheckBox fx:id="todosVisiblesInput" text=" " GridPane.columnIndex="1" GridPane.rowIndex="2">
+                            <GridPane.margin>
+                                <Insets left="16.0" />
+                            </GridPane.margin></JFXCheckBox>
+                        <Label text="Ver en L.E." GridPane.columnIndex="1" GridPane.rowIndex="1">
+                            <font>
+                                <Font name="System Bold" size="15.0" />
+                            </font>
+                        </Label>
+                        <Label text="Todos" GridPane.rowIndex="2">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                        </Label>
+                        <Label text="Comportamientos Por Defecto:">
+                            <font>
+                                <Font name="System Bold" size="15.0" />
+                            </font>
+                        </Label>
+                          <JFXButton fx:id="compPorDefectoBtn" buttonType="RAISED" prefHeight="30.0" prefWidth="30.0" ripplerFill="WHITE" styleClass="btn_edit_part" textFill="WHITE" GridPane.columnIndex="1">
+                              <font>
+                                  <Font name="System Bold" size="25.0" />
+                              </font>
+                     <graphic>
+                        <MaterialIconView glyphName="EDIT" styleClass="glyph-icon-edit">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </MaterialIconView>
+                     </graphic>
+                     <GridPane.margin>
+                        <Insets left="10.0" />
+                     </GridPane.margin>
+                          </JFXButton>
+                    </children>
+                </GridPane>
+                <AnchorPane fx:id="compPorDefectoPane" layoutX="210.0" layoutY="45.0" prefHeight="130.0" prefWidth="260.0" style="-fx-background-color: #d7ddd9; -fx-border-color: BLACK; -fx-border-width: 2px;" visible="false">
+                    <children>
+                        <GridPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #d7ddd9;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <children>
+                                <Label text="Comportamiento Paso:">
+                                    <font>
+                                        <Font size="15.0" />
+                                    </font>
+                                    <GridPane.margin>
+                                        <Insets left="10.0" />
+                                    </GridPane.margin>
+                                </Label>
+                                <JFXComboBox fx:id="inputCompPaso" focusColor="#27864d" prefHeight="31.0" prefWidth="247.0" style="-fx-background-color: WHITE;" GridPane.rowIndex="1">
+                                    <GridPane.margin>
+                                        <Insets left="10.0" right="55.0" />
+                                    </GridPane.margin>
+                                </JFXComboBox>
+                                <JFXButton fx:id="compPorDefectoDoneBtn" buttonType="RAISED" ripplerFill="WHITE" style="-fx-background-color: #27864d;" text="Listo" textFill="WHITE" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+                                    <font>
+                                        <Font name="System Bold" size="15.0" />
+                                    </font>
+                                    <GridPane.margin>
+                                        <Insets left="10.0" right="10.0" />
+                                    </GridPane.margin>
+                                </JFXButton>
+                                <JFXButton fx:id="inputCompPasoEV" buttonType="RAISED" prefHeight="30.0" prefWidth="37.0" ripplerFill="WHITE" style="-fx-background-color: #27864d;" text="EV" textFill="WHITE" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+                                    <GridPane.margin>
+                                        <Insets right="10.0" />
+                                    </GridPane.margin>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                                </JFXButton>
+                            </children>
+                        </GridPane>
+                    </children>
+                </AnchorPane>
+            </children>
+        </AnchorPane>
+    </content>
+</TitledPane>

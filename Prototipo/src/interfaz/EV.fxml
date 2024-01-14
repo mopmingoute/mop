@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import de.jensd.fx.glyphs.materialicons.MaterialIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<!--
+  ~ MOP Copyright (C) 2023 UTE Corporation
+  ~
+  ~ EV.fxml is part of MOP.
+  ~
+  ~ MOP is free software: you can redistribute it and/or modify it under the terms
+  ~ of the GNU General Public License as published by the Free Software Foundation, either
+  ~ version 3 of the License, or (at your option) any later version.
+  ~
+  ~ MOP is distributed in the hope that it will be useful, but WITHOUT ANY
+  ~ WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+  ~ PARTICULAR PURPOSE. See the GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License along with MOP. If
+  ~ not, see <https://www.gnu.org/licenses/>.
+  -->
+
+<AnchorPane maxWidth="360.0" minWidth="359.0" prefHeight="455.0" prefWidth="359.0" style="-fx-background-color: #d7ddd9;" stylesheets="@test.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<!--    <AnchorPane maxWidth="360.0" minHeight="0.0" minWidth="359.0" prefHeight="970.0" prefWidth="359.0">-->
+        <children>
+            <ScrollPane maxHeight="524.0" maxWidth="359.0" minHeight="300.0" minWidth="300.0" prefHeight="399.0" prefWidth="359.0" AnchorPane.bottomAnchor="61.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                <content>
+                    <AnchorPane prefHeight="320.0" prefWidth="348.0">
+                        <children>
+                              <TitledPane fx:id="tiledPane" animated="false" prefHeight="392.0" text="EV">
+                                  <content>
+                                      <AnchorPane minWidth="0.0">
+                                          <children>
+                                              <GridPane fx:id="gridPane" layoutX="19.6" layoutY="18.6" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="9.0">
+                                                  <columnConstraints>
+                                                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="52.0" minWidth="52.0" prefWidth="52.0" />
+                                                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="52.0" minWidth="52.0" prefWidth="52.0" />
+                                                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="52.0" minWidth="52.0" prefWidth="52.0" />
+                                                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="52.0" minWidth="52.0" prefWidth="52.0" />
+                                                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="52.0" minWidth="52.0" prefWidth="52.0" />
+                                                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="52.0" minWidth="52.0" prefWidth="52.0" />
+                                                  </columnConstraints>
+                                                  <rowConstraints>
+                                                      <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                                  </rowConstraints>
+                                                  <children>
+                                                      <Label text="Tipo:" GridPane.columnIndex="3">
+                                                          <font>
+                                                              <Font size="15.0" />
+                                                          </font>
+                                                      </Label>
+                                                      <Label text="Data:">
+                                                          <font>
+                                                              <Font size="15.0" />
+                                                          </font>
+                                                      </Label>
+                                                      <JFXComboBox fx:id="comboBoxTipo" focusColor="#27864d" prefHeight="25.0" prefWidth="263.0" style="-fx-background-color: WHITE; -fx-font-size: 15px;" GridPane.columnIndex="3" GridPane.columnSpan="3" GridPane.rowIndex="1">
+                                                          <GridPane.margin>
+                                                              <Insets right="10.0" />
+                                                          </GridPane.margin>
+                                                      </JFXComboBox>
+                                                      <Separator prefHeight="6.0" prefWidth="381.0" GridPane.columnSpan="2147483647" GridPane.rowIndex="2" />
+                                    <Label fx:id="labelTipoData" GridPane.columnSpan="3" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="System Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                                  </children>
+                                              </GridPane>
+                              <Label fx:id="messageLabel" layoutX="19.0" layoutY="5.0" prefHeight="21.0" prefWidth="310.0">
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Label>
+                                          </children>
+                                      </AnchorPane>
+                                  </content>
+                              </TitledPane>
+                        </children>
+                    </AnchorPane>
+                </content>
+            </ScrollPane>
+      <JFXButton fx:id="inputCancelar" buttonType="RAISED" layoutX="146.0" layoutY="410.0" prefWidth="90.0" ripplerFill="WHITE" style="-fx-background-color: #27864d;" text="Cancelar" textFill="WHITE" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="120.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="inputAceptar" buttonType="RAISED" layoutX="255.0" layoutY="410.0" prefWidth="90.0" ripplerFill="WHITE" style="-fx-background-color: #27864d;" text="Aceptar" textFill="WHITE" AnchorPane.bottomAnchor="15.0" AnchorPane.rightAnchor="15.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="inputImport" buttonType="RAISED" disable="true" layoutX="14.0" layoutY="409.0" minHeight="28.0" minWidth="28.0" prefHeight="35.0" prefWidth="42.0" ripplerFill="WHITE" text=" " textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <graphic>
+            <MaterialIconView glyphName="VERTICAL_ALIGN_TOP" size="25">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </MaterialIconView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="inputExport" buttonType="RAISED" disable="true" graphicTextGap="0.0" layoutX="67.0" layoutY="409.0" maxHeight="35.0" maxWidth="42.0" minHeight="28.0" minWidth="28.0" prefHeight="35.0" prefWidth="42.0" ripplerFill="WHITE" text=" " textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <graphic>
+            <MaterialIconView glyphName="VERTICAL_ALIGN_BOTTOM" size="25" strokeType="INSIDE" textAlignment="CENTER" />
+         </graphic>
+      </JFXButton>
+        </children>
+<!--    </AnchorPane>-->
+</AnchorPane>

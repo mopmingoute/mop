@@ -1,0 +1,850 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXSlider?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<!--
+  ~ MOP Copyright (C) 2023 UTE Corporation
+  ~
+  ~ sample.fxml is part of MOP.
+  ~
+  ~ MOP is free software: you can redistribute it and/or modify it under the terms
+  ~ of the GNU General Public License as published by the Free Software Foundation, either
+  ~ version 3 of the License, or (at your option) any later version.
+  ~
+  ~ MOP is distributed in the hope that it will be useful, but WITHOUT ANY
+  ~ WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+  ~ PARTICULAR PURPOSE. See the GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License along with MOP. If
+  ~ not, see <https://www.gnu.org/licenses/>.
+  -->
+
+<VBox fx:id="container" prefHeight="619.0" prefWidth="1000.0" snapToPixel="false" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfaz.Controller">
+   <children>
+      <MenuBar prefHeight="0.0" prefWidth="1000.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Archivo">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Nuevo" />
+                  <MenuItem mnemonicParsing="false" text="Abrir..." />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Guardar" />
+                  <MenuItem mnemonicParsing="false" text="Guardar Como..." />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Salir" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Herramientas">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Ayuda">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Acerca de" />
+            </items>
+          </Menu>
+        </menus>
+         <VBox.margin>
+            <Insets top="20.0" />
+         </VBox.margin>
+      </MenuBar>
+      <TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="800.0" minWidth="1000.0" prefHeight="975.0" prefWidth="1000.0" tabClosingPolicy="UNAVAILABLE">
+          <tabs>
+              <Tab text="Parámetros Generales">
+               <content>
+                  <VBox prefHeight="200.0">
+                     <children>
+                        <TitledPane text="Horizonte de Tiempo">
+                           <content>
+                              <GridPane>
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <Label prefHeight="17.0" text="Optimización:" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+                                       <padding>
+                                          <Insets right="5.0" />
+                                       </padding>
+                                    </Label>
+                                    <Label prefHeight="17.0" text="Simulación:" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+                                       <padding>
+                                          <Insets right="5.0" />
+                                       </padding>
+                                    </Label>
+                                    <Label text="Fecha de Inicio:" GridPane.columnIndex="1" />
+                                    <Label text="Fecha de Fin:" GridPane.columnIndex="2" />
+                                    <Label text="Huso Horario" GridPane.columnIndex="4" />
+                                    <TextField onKeyPressed="#handleEvent" prefHeight="34.0" prefWidth="153.0" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                                       <GridPane.margin>
+                                          <Insets right="10.0" />
+                                       </GridPane.margin>
+                                    </TextField>
+                                    <Label text="Fecha Guarda Sim:" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+                                       <padding>
+                                          <Insets right="5.0" />
+                                       </padding>
+                                    </Label>
+                                    <DatePicker fx:id="testDate" onKeyPressed="#checkDateFormat" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                                       <GridPane.margin>
+                                          <Insets right="10.0" />
+                                       </GridPane.margin>
+                                    </DatePicker>
+                                    <DatePicker GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                       <GridPane.margin>
+                                          <Insets right="10.0" />
+                                       </GridPane.margin>
+                                    </DatePicker>
+                                    <DatePicker GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                       <GridPane.margin>
+                                          <Insets right="10.0" />
+                                       </GridPane.margin>
+                                    </DatePicker>
+                                    <DatePicker GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                       <GridPane.margin>
+                                          <Insets right="10.0" />
+                                       </GridPane.margin>
+                                    </DatePicker>
+                                    <DatePicker GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                       <GridPane.margin>
+                                          <Insets right="10.0" />
+                                       </GridPane.margin>
+                                       <tooltip>
+                                          <Tooltip text="Formato: dd/mm/aaaa">
+                                             <font>
+                                                <Font size="13.0" />
+                                             </font>
+                                          </Tooltip>
+                                       </tooltip>
+                                    </DatePicker>
+                                     <ComboBox prefWidth="150.0" promptText="Huso Horario" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                                         <items>
+                                             <FXCollections fx:factory="observableArrayList">
+                                                 <String fx:value="UTC−03:00" />
+                                                 <String fx:value="UTC−03:30" />
+                                                 <String fx:value="UTC+01:00" />
+                                             </FXCollections>
+                                         </items>
+                                     </ComboBox>
+                                 </children>
+                              </GridPane>
+                           </content>
+                        </TitledPane>
+                        <TitledPane text="Paso de Tiempo">
+                           <content>
+                              <GridPane prefHeight="127.0">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="207.0" minWidth="10.0" prefWidth="207.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="771.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <VBox prefHeight="51.0" prefWidth="194.0">
+                                       <children>
+                                          <Label text="Unidades del paso de tiempo">
+                                             <padding>
+                                                <Insets bottom="10.0" />
+                                             </padding>
+                                          </Label>
+                                          <RadioButton mnemonicParsing="false" selected="true" text="Horas">
+                                             <padding>
+                                                <Insets bottom="5.0" />
+                                             </padding>
+                                             <toggleGroup>
+                                                <ToggleGroup fx:id="unidadesDeTiempo" />
+                                             </toggleGroup>
+                                          </RadioButton>
+                                          <RadioButton mnemonicParsing="false" text="Minutos" toggleGroup="$unidadesDeTiempo">
+                                             <padding>
+                                                <Insets bottom="5.0" />
+                                             </padding>
+                                          </RadioButton>
+                                       </children>
+                                       <GridPane.margin>
+                                          <Insets />
+                                       </GridPane.margin>
+                                       <padding>
+                                          <Insets left="20.0" top="15.0" />
+                                       </padding>
+                                    </VBox>
+                                    <GridPane GridPane.columnIndex="1">
+                                      <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                      </columnConstraints>
+                                      <rowConstraints>
+                                        <RowConstraints maxHeight="58.0" minHeight="10.0" prefHeight="47.0" vgrow="SOMETIMES" />
+                                        <RowConstraints maxHeight="78.0" minHeight="10.0" prefHeight="78.0" vgrow="SOMETIMES" />
+                                      </rowConstraints>
+                                       <children>
+                                          <HBox prefHeight="47.0">
+                                             <children>
+                                                <Label prefHeight="25.0" prefWidth="168.0" text="Número de Postes:">
+                                                   <padding>
+                                                      <Insets left="50.0" right="10.0" />
+                                                   </padding>
+                                                </Label>
+                                                <TextField fx:id="test" prefHeight="25.0" prefWidth="33.0" text="4" />
+                                                <CheckBox mnemonicParsing="false" prefHeight="25.0" text="Postes Monotonos?">
+                                                   <padding>
+                                                      <Insets left="50.0" />
+                                                   </padding>
+                                                </CheckBox>
+                                             </children>
+                                             <padding>
+                                                <Insets top="10.0" />
+                                             </padding>
+                                          </HBox>
+                                          <GridPane fx:id="gridPostes" gridLinesVisible="true" prefHeight="50.0" GridPane.rowIndex="1">
+                                            <columnConstraints>
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="60.0" minWidth="10.0" prefWidth="27.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="50.0" minWidth="0.0" prefWidth="26.0" />
+                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="50.0" minWidth="10.0" prefWidth="424.0" />
+                                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="50.0" minWidth="10.0" prefWidth="100.0" />
+                                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="50.0" minWidth="10.0" prefWidth="100.0" />
+                                            </columnConstraints>
+                                            <rowConstraints>
+                                              <RowConstraints maxHeight="27.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                              <RowConstraints maxHeight="27.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                            </rowConstraints>
+                                             <children>
+                                                <Label text="Poste N°">
+                                                   <padding>
+                                                      <Insets left="5.0" />
+                                                   </padding>
+                                                </Label>
+                                                <Label text="Duración" GridPane.rowIndex="1">
+                                                   <padding>
+                                                      <Insets left="5.0" />
+                                                   </padding>
+                                                   <GridPane.margin>
+                                                      <Insets />
+                                                   </GridPane.margin>
+                                                </Label>
+                                                <Label prefHeight="17.0" prefWidth="4.0" text="1" GridPane.columnIndex="1">
+                                                   <padding>
+                                                      <Insets left="8.0" />
+                                                   </padding>
+                                                </Label>
+                                                <Label text="2" GridPane.columnIndex="2">
+                                                   <padding>
+                                                      <Insets left="8.0" />
+                                                   </padding>
+                                                </Label>
+                                                <Label text="3" GridPane.columnIndex="3">
+                                                   <padding>
+                                                      <Insets left="8.0" />
+                                                   </padding>
+                                                </Label>
+                                                <Label text="4" GridPane.columnIndex="4">
+                                                   <padding>
+                                                      <Insets left="8.0" />
+                                                   </padding>
+                                                </Label>
+                                                <TextField text="30" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                                                <TextField text="91" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                                                <TextField text="42" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                                                <TextField text="5" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                             </children>
+                                             <GridPane.margin>
+                                                <Insets left="50.0" top="10.0" />
+                                             </GridPane.margin>
+                                          </GridPane>
+                                       </children>
+                                    </GridPane>
+                                 </children>
+                              </GridPane>
+                           </content>
+                        </TitledPane>
+                        <TitledPane text="Informativo">
+                           <content>
+                              <GridPane>
+                                <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="30.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="30.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="30.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <Label text="Duración del Paso del Tiempo [h]:" GridPane.halignment="RIGHT" />
+                                    <Label text="Pasos de Optimización:" GridPane.columnIndex="2" GridPane.halignment="RIGHT" />
+                                    <Label text="Pasos de Simulación:" GridPane.columnIndex="4" GridPane.halignment="RIGHT" />
+                                    <Label text="168" GridPane.columnIndex="1">
+                                       <GridPane.margin>
+                                          <Insets left="10.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label text="1460" GridPane.columnIndex="3">
+                                       <GridPane.margin>
+                                          <Insets left="10.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                    <Label text="1356" GridPane.columnIndex="5">
+                                       <GridPane.margin>
+                                          <Insets left="10.0" />
+                                       </GridPane.margin>
+                                    </Label>
+                                 </children>
+                              </GridPane>
+                           </content>
+                        </TitledPane>
+                        <TitledPane animated="false" text="Descripción de esta Corrida">
+                           <content>
+                              <TextArea prefHeight="380.0" prefWidth="998.0" wrapText="true" />
+                           </content>
+                        </TitledPane>
+                     </children>
+                  </VBox>
+               </content>
+            </Tab>
+              <Tab text="Fuentes" />
+              <Tab style="" text="Participantes">
+               <content>
+                  <TabPane prefHeight="741.0" tabClosingPolicy="UNAVAILABLE">
+                    <tabs>
+                      <Tab text="Eólicas">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0">
+                                 <children>
+                                    <VBox minHeight="523.0" minWidth="1000.0" prefHeight="743.0" prefWidth="1000.0">
+                                       <children>
+                                          <Pane prefHeight="44.0" prefWidth="1000.0">
+                                             <children>
+                                                <Button layoutX="437.0" layoutY="10.0" mnemonicParsing="false" text="Exportar Participante" />
+                                                <Button layoutX="280.0" layoutY="10.0" mnemonicParsing="false" text="Importar Participante" />
+                                                <Button fx:id="" layoutX="588.0" layoutY="10.0" mnemonicParsing="false" onAction="#testButtonClicked" text="Agregar Participante" />
+                                             </children>
+                                          </Pane>
+<!--                                          <GridPane gridLinesVisible="true">-->
+<!--                                            <columnConstraints>-->
+<!--                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="134.0" minWidth="10.0" prefWidth="126.0" />-->
+<!--                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="148.0" minWidth="10.0" prefWidth="147.0" />-->
+<!--                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="631.0" minWidth="10.0" prefWidth="586.0" />-->
+<!--                                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="65.0" minWidth="0.0" prefWidth="65.0" />-->
+<!--                                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="65.0" minWidth="0.0" prefWidth="65.0" />-->
+<!--                                            </columnConstraints>-->
+<!--                                            <rowConstraints>-->
+<!--                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />-->
+<!--                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />-->
+<!--                                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />-->
+<!--                                            </rowConstraints>-->
+<!--                                             <children>-->
+<!--                                                <Label style="-fx-font-weight: bold;" text="Participante">-->
+<!--                                                   <padding>-->
+<!--                                                      <Insets left="5.0" />-->
+<!--                                                   </padding></Label>-->
+<!--                                                <Label style="-fx-font-weight: bold;" text="Tipo de Participante" GridPane.columnIndex="1">-->
+<!--                                                   <padding>-->
+<!--                                                      <Insets left="5.0" />-->
+<!--                                                   </padding></Label>-->
+<!--                                                <Label style="-fx-font-weight: bold;" text="Información adicional" GridPane.columnIndex="2">-->
+<!--                                                   <GridPane.margin>-->
+<!--                                                      <Insets />-->
+<!--                                                   </GridPane.margin>-->
+<!--                                                   <padding>-->
+<!--                                                      <Insets left="5.0" />-->
+<!--                                                   </padding></Label>-->
+<!--                                                <Label text="Eólica" GridPane.rowIndex="1">-->
+<!--                                                   <padding>-->
+<!--                                                      <Insets left="5.0" />-->
+<!--                                                   </padding></Label>-->
+<!--                                                <Label text="Exp_Eólica" GridPane.rowIndex="2">-->
+<!--                                                   <padding>-->
+<!--                                                      <Insets left="5.0" />-->
+<!--                                                   </padding></Label>-->
+<!--                                                <Label text="Parque Eólico" GridPane.columnIndex="1" GridPane.rowIndex="1">-->
+<!--                                                   <padding>-->
+<!--                                                      <Insets left="5.0" />-->
+<!--                                                   </padding></Label>-->
+<!--                                                <Label text="Parque Eólico" GridPane.columnIndex="1" GridPane.rowIndex="2">-->
+<!--                                                   <padding>-->
+<!--                                                      <Insets left="5.0" />-->
+<!--                                                   </padding></Label>-->
+<!--                                                <Label GridPane.columnIndex="2" GridPane.rowIndex="1" />-->
+<!--                                                <Label GridPane.columnIndex="2" GridPane.rowIndex="2" />-->
+<!--                                                <Button mnemonicParsing="false" prefHeight="151.0" prefWidth="63.0" text="Editar" GridPane.columnIndex="3" GridPane.rowIndex="1">-->
+<!--                                                   <GridPane.margin>-->
+<!--                                                      <Insets left="1.0" right="1.0" />-->
+<!--                                                   </GridPane.margin></Button>-->
+<!--                                                <Button mnemonicParsing="false" prefHeight="77.0" prefWidth="65.0" text="Eliminar" GridPane.columnIndex="4" GridPane.rowIndex="1">-->
+<!--                                                   <GridPane.margin>-->
+<!--                                                      <Insets />-->
+<!--                                                   </GridPane.margin></Button>-->
+<!--                                                <Button mnemonicParsing="false" prefHeight="299.0" prefWidth="63.0" text="Editar" GridPane.columnIndex="3" GridPane.rowIndex="2">-->
+<!--                                                   <GridPane.margin>-->
+<!--                                                      <Insets left="1.0" right="1.0" />-->
+<!--                                                   </GridPane.margin></Button>-->
+<!--                                                <Button mnemonicParsing="false" prefHeight="129.0" prefWidth="63.0" text="Eliminar" GridPane.columnIndex="4" GridPane.rowIndex="2">-->
+<!--                                                   <GridPane.margin>-->
+<!--                                                      <Insets left="1.0" right="1.0" />-->
+<!--                                                   </GridPane.margin></Button>-->
+<!--                                             </children>-->
+<!--                                             <VBox.margin>-->
+<!--                                                <Insets left="5.0" right="5.0" />-->
+<!--                                             </VBox.margin>-->
+<!--                                          </GridPane>-->
+                                          <TableView fx:id="tableView" prefHeight="200.0" prefWidth="200.0">
+                                            <columns>
+                                              <TableColumn fx:id="participante" prefWidth="133.0" style="-fx-alignment: CENTER-LEFT;" text="Participante" />
+                                              <TableColumn fx:id="tipoParticipante" prefWidth="148.0" style="-fx-alignment: CENTER-LEFT;" text="Tipo de Participante" />
+                                                <TableColumn minWidth="2.0" prefWidth="567.0" text="Información adicional" />
+                                                <TableColumn fx:id="editarCol" maxWidth="70.0" minWidth="70.0" prefWidth="70.0" />
+                                                <TableColumn fx:id="eliminarCol" maxWidth="70.0" minWidth="70.0" prefWidth="70.0" />
+                                            </columns>
+                                             <VBox.margin>
+                                                <Insets left="5.0" right="5.0" />
+                                             </VBox.margin>
+                                          </TableView>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </Tab>
+                      <Tab text="Solar">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                        </content>
+                      </Tab>
+                        <Tab text="Térmicas">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                          </content>
+                        </Tab>
+                        <Tab text="Hidráulicas">
+                          <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                          </content>
+                        </Tab>
+                    </tabs>
+                  </TabPane>
+               </content>
+            </Tab>
+            <Tab text="Untitled Tab">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <JFXTabPane layoutY="-2.0" prefHeight="774.0" prefWidth="1000.0" styleClass="jfx-tab-pane" stylesheets="sample/test.css" tabDragPolicy="REORDER">
+                           <tabs>
+                              <Tab style="-fx-background-color: #27864d;" text="Parámetros Generales">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <VBox prefHeight="737.0" prefWidth="1000.0">
+                                             <children>
+                                                <TitledPane prefHeight="432.0" prefWidth="1000.0" stylesheets="sample/test.css" text="Horizonte de Tiempo" textFill="WHITE">
+                                                  <content>
+                                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="0.0" prefWidth="998.0">
+                                                         <children>
+                                                            <VBox layoutX="42.8" layoutY="38.8" prefHeight="290.0" prefWidth="924.0" AnchorPane.bottomAnchor="-6.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="44.0" AnchorPane.topAnchor="26.0">
+                                                               <children>
+                                                                  <GridPane prefHeight="283.0" prefWidth="937.0">
+                                                                    <columnConstraints>
+                                                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="185.0" minWidth="110.0" prefWidth="110.0" />
+                                                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="185.0" minWidth="185.0" prefWidth="185.0" />
+                                                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="185.0" minWidth="110.0" prefWidth="110.0" />
+                                                                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="185.0" minWidth="185.0" prefWidth="185.0" />
+                                                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="376.0" minWidth="10.0" prefWidth="145.0" />
+                                                                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="210.0" minWidth="10.0" prefWidth="206.0" />
+                                                                    </columnConstraints>
+                                                                    <rowConstraints>
+                                                                      <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                                                                      <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                                                                      <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                                                                        <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                                                                        <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                                                                        <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                                                                        <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                                                                        <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                                                                        <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                                                                    </rowConstraints>
+                                                                     <children>
+                                                                        <JFXRadioButton selected="true" text="enHaz" GridPane.columnIndex="5" GridPane.rowIndex="1">
+                                                                           <font>
+                                                                              <Font size="13.0" />
+                                                                           </font>
+                                                                           <toggleGroup>
+                                                                              <ToggleGroup fx:id="tipoSimulacion" />
+                                                                           </toggleGroup>
+                                                                        </JFXRadioButton>
+                                                                        <JFXRadioButton text="enCadena" toggleGroup="$tipoSimulacion" GridPane.columnIndex="5" GridPane.rowIndex="2">
+                                                                           <font>
+                                                                              <Font size="13.0" />
+                                                                           </font>
+                                                                        </JFXRadioButton>
+                                                                        <Label text="Tipo de Simulación:" GridPane.columnIndex="5">
+                                                                           <font>
+                                                                              <Font name="System Bold" size="13.0" />
+                                                                           </font>
+                                                                        </Label>
+                                                                        <JFXDatePicker defaultColor="#27864d" style="-fx-background-color: WHITE;" GridPane.columnIndex="1">
+                                                                           <GridPane.margin>
+                                                                              <Insets left="10.0" />
+                                                                           </GridPane.margin>
+                                                                        </JFXDatePicker>
+                                                                        <JFXDatePicker defaultColor="#27864d" style="-fx-background-color: WHITE;" GridPane.columnIndex="3">
+                                                                           <GridPane.margin>
+                                                                              <Insets left="10.0" />
+                                                                           </GridPane.margin>
+                                                                        </JFXDatePicker>
+                                                                        <Label text="Inicio Corrida:" GridPane.halignment="LEFT">
+                                                                           <GridPane.margin>
+                                                                              <Insets left="10.0" />
+                                                                           </GridPane.margin>
+                                                                           <font>
+                                                                              <Font name="System Bold" size="13.0" />
+                                                                           </font>
+                                                                        </Label>
+                                                                        <Label text="Fin Corrida:" GridPane.columnIndex="2" GridPane.halignment="CENTER">
+                                                                           <GridPane.margin>
+                                                                              <Insets left="10.0" />
+                                                                           </GridPane.margin>
+                                                                           <font>
+                                                                              <Font name="System Bold" size="13.0" />
+                                                                           </font>
+                                                                        </Label>
+                                                                        <Label text="Postización:" GridPane.rowIndex="2">
+                                                                           <font>
+                                                                              <Font name="System Bold" size="13.0" />
+                                                                           </font>
+                                                                           <GridPane.margin>
+                                                                              <Insets left="10.0" />
+                                                                           </GridPane.margin>
+                                                                        </Label>
+                                                                        <JFXRadioButton fx:id="radioPosInterna" selected="true" text="Interna" GridPane.rowIndex="3">
+                                                                           <GridPane.margin>
+                                                                              <Insets left="10.0" />
+                                                                           </GridPane.margin>
+                                                                           <toggleGroup>
+                                                                              <ToggleGroup fx:id="tipoPostizacion" />
+                                                                           </toggleGroup>
+                                                                           <font>
+                                                                              <Font size="13.0" />
+                                                                           </font>
+                                                                        </JFXRadioButton>
+                                                                        <JFXRadioButton fx:id="radioPosExterna" text="Externa" toggleGroup="$tipoPostizacion" GridPane.rowIndex="4">
+                                                                           <GridPane.margin>
+                                                                              <Insets left="10.0" />
+                                                                           </GridPane.margin>
+                                                                           <font>
+                                                                              <Font size="13.0" />
+                                                                           </font>
+                                                                        </JFXRadioButton>
+                                                                        <JFXTextField fx:id="rutaPosField" disable="true" editable="false" focusColor="#27864d" prefHeight="29.0" prefWidth="350.0" style="-fx-background-color: WHITE;" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.rowSpan="2" GridPane.valignment="CENTER" />
+                                                                        <JFXButton fx:id="rutaPosBtn" buttonType="RAISED" disable="true" prefHeight="39.0" prefWidth="60.0" ripplerFill="#cdeadb" style="-fx-background-color: #27864d;" text="" textFill="WHITE" GridPane.columnIndex="4" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.rowSpan="2">
+                                                                           <GridPane.margin>
+                                                                              <Insets left="10.0" />
+                                                                           </GridPane.margin>
+                                                                        </JFXButton>
+                                                                        <Label text="ValPostización:" GridPane.rowIndex="6">
+                                                                           <font>
+                                                                              <Font name="System Bold" size="13.0" />
+                                                                           </font>
+                                                                           <GridPane.margin>
+                                                                              <Insets left="10.0" />
+                                                                           </GridPane.margin>
+                                                                        </Label>
+                                                                        <JFXRadioButton fx:id="radioValPosInterna" disable="true" selected="true" text="Interna" GridPane.rowIndex="7">
+                                                                           <font>
+                                                                              <Font size="13.0" />
+                                                                           </font>
+                                                                           <GridPane.margin>
+                                                                              <Insets left="10.0" />
+                                                                           </GridPane.margin>
+                                                                           <toggleGroup>
+                                                                              <ToggleGroup fx:id="tipoValPostizacion" />
+                                                                           </toggleGroup>
+                                                                        </JFXRadioButton>
+                                                                        <JFXRadioButton fx:id="radioValPosExterna" disable="true" text="Externa" toggleGroup="$tipoValPostizacion" GridPane.rowIndex="8">
+                                                                           <font>
+                                                                              <Font size="13.0" />
+                                                                           </font>
+                                                                           <GridPane.margin>
+                                                                              <Insets left="10.0" />
+                                                                           </GridPane.margin>
+                                                                        </JFXRadioButton>
+                                                                        <Label text="Cant Escenarios:" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="7">
+                                                                           <font>
+                                                                              <Font name="System Bold" size="13.0" />
+                                                                           </font>
+                                                                           <GridPane.margin>
+                                                                              <Insets right="10.0" />
+                                                                           </GridPane.margin>
+                                                                        </Label>
+                                                                        <Label text="Tasa Anual:" GridPane.columnIndex="4" GridPane.halignment="RIGHT" GridPane.rowIndex="7">
+                                                                           <font>
+                                                                              <Font name="System Bold" size="13.0" />
+                                                                           </font>
+                                                                           <GridPane.margin>
+                                                                              <Insets right="10.0" />
+                                                                           </GridPane.margin>
+                                                                        </Label>
+                                                                        <JFXTextField fx:id="inputTasaAnual" focusColor="#27864d" maxWidth="40.0" prefWidth="40.0" style="-fx-background-color: WHITE;" GridPane.columnIndex="5" GridPane.rowIndex="7">
+                                                                           <GridPane.margin>
+                                                                              <Insets left="10.0" />
+                                                                           </GridPane.margin>
+                                                                        </JFXTextField>
+                                                                        <JFXTextField fx:id="inputCantEscenarios" focusColor="#27864d" maxWidth="40.0" prefWidth="40.0" style="-fx-background-color: WHITE;" GridPane.columnIndex="3" GridPane.rowIndex="7">
+                                                                           <GridPane.margin>
+                                                                              <Insets left="10.0" />
+                                                                           </GridPane.margin>
+                                                                        </JFXTextField>
+                                                                        <Label prefHeight="17.0" prefWidth="78.0" text="\%" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="7">
+                                                                           <font>
+                                                                              <Font name="System Bold" size="13.0" />
+                                                                           </font>
+                                                                        </Label>
+                                                                     </children>
+                                                                  </GridPane>
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </AnchorPane>
+                                                  </content>
+                                                   <font>
+                                                      <Font size="16.0" />
+                                                   </font>
+                                                </TitledPane>
+                                                <TitledPane animated="false" prefHeight="335.0" prefWidth="1000.0" text="asdasd">
+                                                  <content>
+                                                    <AnchorPane minHeight="0.0" minWidth="0.0" />
+                                                  </content>
+                                                </TitledPane>
+                                             </children>
+                                          </VBox>
+                                       </children></AnchorPane>
+                                </content>
+                              </Tab>
+                              <Tab style="-fx-background-color: #27864d;" text="Procesos Estocásticos">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <AnchorPane layoutY="-2.0" prefHeight="739.0" prefWidth="1000.0">
+                                             <children>
+                                                <AnchorPane layoutY="1.0" prefHeight="80.0" prefWidth="1000.0" style="-fx-background-color: #27864d;">
+                                                   <children>
+                                                      <JFXHamburger fx:id="testHamburger" prefHeight="81.0" prefWidth="69.0" />
+                                                   </children>
+                                                </AnchorPane>
+                                                <SplitPane dividerPositions="0.18637274549098196" layoutY="79.0" prefHeight="660.0" prefWidth="1000.0">
+                                                  <items>
+                                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="658.0" prefWidth="251.0" style="-fx-background-color: #27864d;">
+                                                         <children>
+                                                            <VBox fx:id="testLeftMenu" layoutX="47.0" layoutY="69.0" prefHeight="658.0" prefWidth="183.0" style="-fx-background-color: #27864d;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                               <children>
+                                                                  <JFXButton buttonType="RAISED" prefHeight="52.0" prefWidth="183.0" ripplerFill="WHITE" style="-fx-background-color: #27864d;" text="Button" textFill="WHITE" />
+                                                                  <JFXButton buttonType="RAISED" prefHeight="52.0" prefWidth="183.0" ripplerFill="WHITE" style="-fx-background-color: #27864d;" text="Button" textFill="WHITE" />
+                                                                  <JFXButton buttonType="RAISED" prefHeight="52.0" prefWidth="183.0" ripplerFill="WHITE" style="-fx-background-color: #27864d;" text="Button" textFill="WHITE" />
+                                                                  <JFXButton buttonType="RAISED" prefHeight="52.0" prefWidth="183.0" ripplerFill="WHITE" style="-fx-background-color: #27864d;" text="Button" textFill="WHITE" />
+                                                                  <JFXButton buttonType="RAISED" prefHeight="52.0" prefWidth="183.0" ripplerFill="WHITE" style="-fx-background-color: #27864d;" text="Button" textFill="WHITE" />
+                                                                  <JFXButton buttonType="RAISED" prefHeight="52.0" prefWidth="183.0" ripplerFill="WHITE" style="-fx-background-color: #27864d;" text="Button" textFill="WHITE" />
+                                                               </children>
+                                                            </VBox>
+                                                         </children>
+                                                      </AnchorPane>
+                                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="658.0" prefWidth="725.0">
+                                                         <children>
+                                                            <JFXCheckBox layoutX="68.0" layoutY="51.0" />
+                                                            <JFXCheckBox layoutX="68.0" layoutY="80.0" />
+                                                            <JFXCheckBox layoutX="68.0" layoutY="109.0" />
+                                                            <JFXCheckBox layoutX="68.0" layoutY="140.0" />
+                                                            <JFXCheckBox layoutX="68.0" layoutY="170.0" text="CheckBox" />
+                                                            <JFXRadioButton layoutX="241.0" layoutY="53.0" />
+                                                            <JFXRadioButton layoutX="241.0" layoutY="78.0" />
+                                                            <JFXRadioButton layoutX="241.0" layoutY="102.0" />
+                                                            <JFXRadioButton layoutX="241.0" layoutY="127.0" />
+                                                            <JFXDatePicker defaultColor="#27864d" layoutX="491.0" layoutY="24.0" />
+                                                            <JFXDatePicker defaultColor="#27864d" layoutX="491.0" layoutY="111.0" />
+                                                            <Separator layoutX="207.0" layoutY="180.0" prefWidth="200.0" />
+                                                            <JFXSlider layoutX="322.0" layoutY="236.0" />
+                                                            <JFXToggleButton layoutX="529.0" layoutY="207.0" toggleColor="#27864d" toggleLineColor="#b4dabd" />
+                                                            <JFXTextField fx:id="evalTest" focusColor="#27864d" layoutX="307.0" layoutY="384.0" />
+                                                            <JFXTextArea focusColor="#27864d" layoutX="491.0" layoutY="420.0" prefHeight="75.0" prefWidth="125.0" />
+                                                            <JFXTextField focusColor="#27864d" layoutX="307.0" layoutY="472.0" />
+                                                            <JFXListView fx:id="testListView" layoutX="49.0" layoutY="303.0" prefHeight="310.0" prefWidth="192.0" />
+                                                            <JFXButton buttonType="RAISED" layoutX="476.0" layoutY="581.0" prefHeight="39.0" prefWidth="77.0" ripplerFill="WHITE" style="-fx-background-color: #27864d;" styleClass="jfx-button" text="asd" textFill="WHITE" />
+                                                            <JFXButton fx:id="testButton" buttonType="RAISED" layoutX="583.0" layoutY="581.0" prefHeight="39.0" prefWidth="77.0" ripplerFill="WHITE" style="-fx-background-color: #27864d;" text="Buttaon" textFill="WHITE" />
+                                                         </children>
+                                                      </AnchorPane>
+                                                  </items>
+                                                </SplitPane>
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </AnchorPane>
+                                </content>
+                              </Tab>
+                              <Tab style="-fx-background-color: #27864d;" text="Participantes">
+                                <content>
+                                    <AnchorPane fx:id="root_pane" stylesheets="@drag.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <children>
+      <!--                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />-->
+      <!--                                    <fx:root fx:id="root_pane" prefHeight="750.0" prefWidth="1041.0" type="javafx.scene.layout.AnchorPane" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1">-->
+      <!--                                        <children>-->
+                                                  <SplitPane fx:id="base_pane" dividerPositions="0.29797979797979796" prefHeight="750.0" prefWidth="1041.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                      <items>
+                                                          <ScrollPane hbarPolicy="NEVER" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="748.0" prefWidth="200.0">
+                                                              <content>
+                                                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="733.0" prefWidth="202.0">
+                                                                      <children>
+                                                                          <VBox fx:id="left_pane" prefHeight="382.0" prefWidth="234.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                                      </children>
+                                                                  </AnchorPane>
+                                                              </content>
+                                                          </ScrollPane>
+                                                          <AnchorPane fx:id="right_pane" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
+                                                      </items>
+                                                  </SplitPane>
+                                       </children>
+                                    </AnchorPane>
+<!--                                        </children>-->
+<!--                                    </fx:root>-->
+                                </content>
+                              </Tab>
+                              <Tab style="-fx-background-color: #27864d;" text="Biblioteca">
+                                  <content>
+                                      <AnchorPane>
+                                       <children>
+                                          <VBox prefHeight="737.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <children>
+                                                <TitledPane animated="false" text="Procesos Estocásticos" textFill="WHITE">
+                                                  <content>
+                                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="261.0" prefWidth="998.0">
+                                                         <children>
+                                                            <GridPane prefHeight="90.0" prefWidth="1000.0">
+                                                              <columnConstraints>
+                                                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                              </columnConstraints>
+                                                              <rowConstraints>
+                                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                              </rowConstraints>
+                                                               <children>
+                                                                  <Label text="Proceso1">
+                                                                     <GridPane.margin>
+                                                                        <Insets left="10.0" />
+                                                                     </GridPane.margin>
+                                                                  </Label>
+                                                                  <Label text="Proceso2" GridPane.rowIndex="1">
+                                                                     <GridPane.margin>
+                                                                        <Insets left="10.0" />
+                                                                     </GridPane.margin>
+                                                                  </Label>
+                                                                  <Label text="Proceso3" GridPane.rowIndex="2">
+                                                                     <GridPane.margin>
+                                                                        <Insets left="10.0" />
+                                                                     </GridPane.margin>
+                                                                  </Label>
+                                                               </children>
+                                                            </GridPane>
+                                                         </children></AnchorPane>
+                                                  </content>
+                                                   <font>
+                                                      <Font size="16.0" />
+                                                   </font>
+                                                </TitledPane>
+                                                <TitledPane animated="false" text="Participantes" textFill="WHITE">
+                                                  <content>
+                                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                         <children>
+                                                            <Accordion prefHeight="182.0" prefWidth="1000.0">
+                                                              <panes>
+                                                                <TitledPane animated="false" text="Eólico">
+                                                                  <content>
+                                                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                                                  </content>
+                                                                </TitledPane>
+                                                                <TitledPane animated="false" text="Solar">
+                                                                  <content>
+                                                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                                                  </content>
+                                                                </TitledPane>
+                                                                <TitledPane animated="false" text="Térmico">
+                                                                  <content>
+                                                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                                                  </content>
+                                                                </TitledPane>
+                                                              </panes>
+                                                            </Accordion>
+                                                         </children></AnchorPane>
+                                                  </content>
+                                                   <font>
+                                                      <Font size="16.0" />
+                                                   </font>
+                                                </TitledPane>
+                                             </children>
+                                          </VBox>
+                                       </children></AnchorPane>
+                                  </content>
+                              </Tab>
+                           </tabs>
+                        </JFXTabPane>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+          </tabs>
+      </TabPane>
+   </children>
+</VBox>

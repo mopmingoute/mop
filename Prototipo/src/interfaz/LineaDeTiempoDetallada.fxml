@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<!--
+  ~ MOP Copyright (C) 2023 UTE Corporation
+  ~
+  ~ LineaDeTiempoDetallada.fxml is part of MOP.
+  ~
+  ~ MOP is free software: you can redistribute it and/or modify it under the terms
+  ~ of the GNU General Public License as published by the Free Software Foundation, either
+  ~ version 3 of the License, or (at your option) any later version.
+  ~
+  ~ MOP is distributed in the hope that it will be useful, but WITHOUT ANY
+  ~ WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+  ~ PARTICULAR PURPOSE. See the GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License along with MOP. If
+  ~ not, see <https://www.gnu.org/licenses/>.
+  -->
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="884.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<children>
+    <SplitPane dividerPositions="0.4791449426485923" layoutX="628.0" layoutY="182.0" prefHeight="940.0" prefWidth="1920.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="17.0">
+        <items>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                <children>
+                    <TitledPane layoutX="-12.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <content>
+                            <GridPane fx:id="gridPaneMain" prefHeight="938.0" prefWidth="916.0">
+                                <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="219.0" minWidth="10.0" prefWidth="175.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="373.0" minWidth="10.0" prefWidth="219.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="348.0" minWidth="10.0" prefWidth="220.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="475.0" minWidth="10.0" prefWidth="192.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="379.0" minWidth="10.0" prefWidth="138.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                    <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                <children>
+                                    <Label text="Inicio Corrida:" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+                                        <font>
+                                            <Font name="System Bold" size="15.0" />
+                                        </font>
+                                        <GridPane.margin>
+                                            <Insets right="20.0" />
+                                        </GridPane.margin>
+                                    </Label>
+                                    <Label text="Fin Corrida:" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+                                        <font>
+                                            <Font name="System Bold" size="15.0" />
+                                        </font>
+                                        <GridPane.margin>
+                                            <Insets right="20.0" />
+                                        </GridPane.margin>
+                                    </Label>
+                                    <Label text="Postización:" GridPane.rowIndex="3">
+                                        <font>
+                                            <Font name="System Bold" size="15.0" />
+                                        </font>
+                                        <GridPane.margin>
+                                            <Insets left="50.0" />
+                                        </GridPane.margin>
+                                    </Label>
+                                    <JFXRadioButton fx:id="inputPostizacionInterna" text="Interna" GridPane.rowIndex="5">
+                                        <font>
+                                            <Font size="15.0" />
+                                        </font>
+                                        <GridPane.margin>
+                                            <Insets left="50.0" />
+                                        </GridPane.margin>
+                                        <toggleGroup>
+                                            <ToggleGroup fx:id="tipoPostizacion" />
+                                        </toggleGroup>
+                                    </JFXRadioButton>
+                                    <JFXRadioButton fx:id="inputPostizacionExterna" selected="true" text="Externa" toggleGroup="$tipoPostizacion" GridPane.rowIndex="4">
+                                        <font>
+                                            <Font size="15.0" />
+                                        </font>
+                                        <GridPane.margin>
+                                            <Insets left="50.0" />
+                                        </GridPane.margin>
+                                    </JFXRadioButton>
+                                    <Label text="ValPostización:" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                                        <font>
+                                            <Font name="System Bold" size="15.0" />
+                                        </font>
+                                        <GridPane.margin>
+                                            <Insets left="50.0" />
+                                        </GridPane.margin>
+                                    </Label>
+                                    <JFXRadioButton fx:id="inputValPostizacionInterna" text="Interna" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                                        <font>
+                                            <Font size="15.0" />
+                                        </font>
+                                        <GridPane.margin>
+                                            <Insets left="50.0" />
+                                        </GridPane.margin>
+                                        <toggleGroup>
+                                            <ToggleGroup fx:id="tipoValPostizacion" />
+                                        </toggleGroup>
+                                    </JFXRadioButton>
+                                    <JFXRadioButton fx:id="inputValPostizacionExterna" selected="true" text="Externa" toggleGroup="$tipoValPostizacion" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                                        <font>
+                                            <Font size="15.0" />
+                                        </font>
+                                        <GridPane.margin>
+                                            <Insets left="50.0" />
+                                        </GridPane.margin>
+                                    </JFXRadioButton>
+                                    <JFXTextField fx:id="inputPostizacionRuta" focusColor="#27864d" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="4">
+                                        <font>
+                                            <Font size="15.0" />
+                                        </font>
+                                        <GridPane.margin>
+                                            <Insets left="20.0" right="20.0" />
+                                        </GridPane.margin>
+                                    </JFXTextField>
+                                    <JFXButton fx:id="inputPostizacionRutaBtn" buttonType="RAISED" ripplerFill="WHITE" style="-fx-background-color: #27864d;" text="File" textFill="WHITE" GridPane.columnIndex="4" GridPane.rowIndex="4">
+                                        <font>
+                                            <Font size="15.0" />
+                                        </font>
+                                    </JFXButton>
+                                    <!--                                                                                                                                   <JFXDatePicker defaultColor="#27864d" showWeekNumbers="true" GridPane.columnIndex="1" GridPane.rowIndex="1" />-->
+                                    <!--                <JFXDatePicker defaultColor="#27864d" showWeekNumbers="true" GridPane.columnIndex="3" GridPane.rowIndex="1" />-->
+                                    <!--                <JFXDatePicker defaultColor="#27864d" showWeekNumbers="true" GridPane.columnIndex="1" GridPane.rowIndex="7" />-->
+                                    <Label text="Inicio de Tiempo:" GridPane.halignment="RIGHT" GridPane.rowIndex="7">
+                                        <font>
+                                            <Font name="System Bold" size="15.0" />
+                                        </font>
+                                        <GridPane.margin>
+                                            <Insets right="20.0" />
+                                        </GridPane.margin>
+                                    </Label>
+                                    <Label text="Activo:" visible="false" GridPane.halignment="RIGHT" GridPane.rowIndex="10">
+                                        <font>
+                                            <Font name="System Bold" size="15.0" />
+                                        </font>
+                                        <GridPane.margin>
+                                            <Insets left="20.0" right="20.0" />
+                                        </GridPane.margin>
+                                    </Label>
+                                    <Label text="Duración:" visible="false" GridPane.halignment="RIGHT" GridPane.rowIndex="11">
+                                        <font>
+                                            <Font name="System Bold" size="15.0" />
+                                        </font>
+                                        <GridPane.margin>
+                                            <Insets left="20.0" right="20.0" />
+                                        </GridPane.margin>
+                                    </Label>
+                                    <JFXTextField fx:id="inputPeriodoIntegracion" focusColor="#27864d" maxWidth="75.0" prefWidth="75.0" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="11">
+                                        <font>
+                                            <Font size="15.0" />
+                                        </font>
+                                        <GridPane.margin>
+                                            <Insets left="5.0" />
+                                        </GridPane.margin>
+                                    </JFXTextField>
+                                    <JFXToggleButton fx:id="inputUsarPeriodoIntegracion" text=" " toggleColor="#27864d" toggleLineColor="#b4dabd" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                                    <Label text="Período de Integración:" visible="false" GridPane.columnSpan="2" GridPane.rowIndex="12">
+                                        <font>
+                                            <Font name="System Bold" size="15.0" />
+                                        </font>
+                                        <GridPane.margin>
+                                            <Insets left="20.0" />
+                                        </GridPane.margin>
+                                    </Label>
+                                    <JFXDatePicker fx:id="inputInicioCorrida" defaultColor="#27864d" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                        <GridPane.margin>
+                                            <Insets left="5.0" />
+                                        </GridPane.margin>
+                                    </JFXDatePicker>
+                                    <JFXDatePicker fx:id="inputFinCorrida" defaultColor="#27864d" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                                        <GridPane.margin>
+                                            <Insets left="5.0" />
+                                        </GridPane.margin>
+                                    </JFXDatePicker>
+                                    <JFXDatePicker fx:id="inputInicioDeTiempo" defaultColor="#27864d" disable="true" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                                        <GridPane.margin>
+                                            <Insets left="5.0" />
+                                        </GridPane.margin>
+                                    </JFXDatePicker>
+                                    <JFXButton fx:id="nuevoBloqueButton" buttonType="RAISED" prefHeight="40.0" prefWidth="42.0" style="-fx-background-color: #27486b;" text="+" textFill="WHITE" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="9">
+                                        <font>
+                                            <Font name="System Bold" size="19.0" />
+                                        </font>
+                                    </JFXButton>
+                                    <Label text="Agregar Bloque:" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.rowIndex="9">
+                                        <font>
+                                            <Font name="System Bold" size="15.0" />
+                                        </font>
+                                    </Label>
+                              <JFXButton fx:id="volverLineaTiempoButton" buttonType="RAISED" prefHeight="42.0" prefWidth="167.0" style="-fx-background-color: #27486b;" text="Vista por Años" textFill="WHITE" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="9">
+                                 <font>
+                                    <Font name="System Bold" size="19.0" />
+                                 </font>
+                              </JFXButton>
+                              <Label fx:id="messageLabel" alignment="CENTER" layoutX="40.0" layoutY="510.0" prefHeight="21.0" prefWidth="857.0" textFill="#f20a0a" GridPane.columnSpan="5" GridPane.rowIndex="11">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font></Label>
+                                </children>
+                            </GridPane>
+                        </content>
+                    </TitledPane>
+                </children>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                <children>
+                    <ScrollPane layoutX="127.0" layoutY="100.0" prefHeight="938.0" prefWidth="996.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <content>
+                            <AnchorPane minHeight="0.0" minWidth="0.0" prefWidth="981.0">
+                                <children>
+                                    <VBox fx:id="vBoxBloques" layoutX="230.0" layoutY="125.0" prefHeight="1292.0" prefWidth="981.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                        <children>
+
+                                        </children>
+                                    </VBox>
+                                </children></AnchorPane>
+                        </content>
+                    </ScrollPane>
+                </children>
+            </AnchorPane>
+        </items>
+    </SplitPane>
+</children>
+</AnchorPane>

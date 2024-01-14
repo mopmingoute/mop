@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<!--
+  ~ MOP Copyright (C) 2023 UTE Corporation
+  ~
+  ~ LineaDeTiempo2.fxml is part of MOP.
+  ~
+  ~ MOP is free software: you can redistribute it and/or modify it under the terms
+  ~ of the GNU General Public License as published by the Free Software Foundation, either
+  ~ version 3 of the License, or (at your option) any later version.
+  ~
+  ~ MOP is distributed in the hope that it will be useful, but WITHOUT ANY
+  ~ WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+  ~ PARTICULAR PURPOSE. See the GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License along with MOP. If
+  ~ not, see <https://www.gnu.org/licenses/>.
+  -->
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="1538.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <GridPane fx:id="gridPane" layoutX="113.0" layoutY="68.0" prefWidth="1538.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="30.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="10.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="80.0" minWidth="80.0" prefWidth="80.0" />
+          <ColumnConstraints hgrow="SOMETIMES" percentWidth="7.9" />
+            <ColumnConstraints hgrow="SOMETIMES" percentWidth="7.9" />
+            <ColumnConstraints hgrow="SOMETIMES" percentWidth="7.9" />
+            <ColumnConstraints hgrow="SOMETIMES" percentWidth="7.9" />
+            <ColumnConstraints hgrow="SOMETIMES" percentWidth="7.9" />
+            <ColumnConstraints hgrow="SOMETIMES" percentWidth="7.9" />
+            <ColumnConstraints hgrow="SOMETIMES" percentWidth="7.9" />
+            <ColumnConstraints hgrow="SOMETIMES" percentWidth="7.9" />
+            <ColumnConstraints hgrow="SOMETIMES" percentWidth="7.9" />
+            <ColumnConstraints hgrow="SOMETIMES" percentWidth="7.9" />
+            <ColumnConstraints hgrow="SOMETIMES" percentWidth="7.9" />
+            <ColumnConstraints hgrow="SOMETIMES" percentWidth="7.9" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="80.0" minHeight="80.0" prefHeight="80.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Line endX="1295.0" endY="2.6058220863342285" startX="-100.0" strokeWidth="3.0" GridPane.columnIndex="1" GridPane.columnSpan="2147483647" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </Line>
+            <Line endY="90.0" startY="60.0" strokeWidth="3.0" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </Line>
+            <Line endY="90.0" startY="60.0" strokeWidth="3.0" GridPane.halignment="RIGHT" GridPane.rowIndex="5" />
+            <Line endY="90.0" startY="60.0" strokeWidth="3.0" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="5" />
+            <Line endY="90.0" startY="60.0" strokeWidth="3.0" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.rowIndex="5" />
+            <Line endY="90.0" startY="60.0" strokeWidth="3.0" GridPane.columnIndex="4" GridPane.halignment="RIGHT" GridPane.rowIndex="5" />
+            <Line endY="90.0" startY="60.0" strokeWidth="3.0" GridPane.columnIndex="5" GridPane.halignment="RIGHT" GridPane.rowIndex="5" />
+            <Line endY="90.0" startY="60.0" strokeWidth="3.0" GridPane.columnIndex="6" GridPane.halignment="RIGHT" GridPane.rowIndex="5" />
+            <Line endY="90.0" startY="60.0" strokeWidth="3.0" GridPane.columnIndex="7" GridPane.halignment="RIGHT" GridPane.rowIndex="5" />
+            <Line endY="90.0" startY="60.0" strokeWidth="3.0" GridPane.columnIndex="8" GridPane.halignment="RIGHT" GridPane.rowIndex="5" />
+            <Line endY="90.0" startY="60.0" strokeWidth="3.0" GridPane.columnIndex="9" GridPane.halignment="RIGHT" GridPane.rowIndex="5" />
+            <Line endY="90.0" startY="60.0" strokeWidth="3.0" GridPane.columnIndex="10" GridPane.halignment="RIGHT" GridPane.rowIndex="5" />
+            <Line endY="90.0" startY="60.0" strokeWidth="3.0" GridPane.columnIndex="11" GridPane.halignment="RIGHT" GridPane.rowIndex="5" />
+            <Line endY="90.0" startY="60.0" strokeWidth="3.0" GridPane.columnIndex="12" GridPane.halignment="RIGHT" GridPane.rowIndex="5" />
+            <Label text="Enero" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="6">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label text="Febrero" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="6">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label text="Marzo" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="6">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label text="Abril" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="6">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label text="Mayo" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="6">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label text="Junio" GridPane.columnIndex="6" GridPane.halignment="CENTER" GridPane.rowIndex="6">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label text="Julio" GridPane.columnIndex="7" GridPane.halignment="CENTER" GridPane.rowIndex="6">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label text="Agosto" GridPane.columnIndex="8" GridPane.halignment="CENTER" GridPane.rowIndex="6">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label text="Setiembre" GridPane.columnIndex="9" GridPane.halignment="CENTER" GridPane.rowIndex="6">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label text="Octubre" GridPane.columnIndex="10" GridPane.halignment="CENTER" GridPane.rowIndex="6">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label text="Noviembre" GridPane.columnIndex="11" GridPane.halignment="CENTER" GridPane.rowIndex="6">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label text="Diciembre" GridPane.columnIndex="12" GridPane.halignment="CENTER" GridPane.rowIndex="6">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label text="2018" GridPane.halignment="CENTER" GridPane.rowIndex="6">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

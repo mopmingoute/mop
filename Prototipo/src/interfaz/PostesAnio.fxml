@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<!--
+  ~ MOP Copyright (C) 2023 UTE Corporation
+  ~
+  ~ PostesAnio.fxml is part of MOP.
+  ~
+  ~ MOP is free software: you can redistribute it and/or modify it under the terms
+  ~ of the GNU General Public License as published by the Free Software Foundation, either
+  ~ version 3 of the License, or (at your option) any later version.
+  ~
+  ~ MOP is distributed in the hope that it will be useful, but WITHOUT ANY
+  ~ WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+  ~ PARTICULAR PURPOSE. See the GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License along with MOP. If
+  ~ not, see <https://www.gnu.org/licenses/>.
+  -->
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="545.0" prefWidth="1052.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <GridPane fx:id="inputCronologico" layoutX="12.0" layoutY="112.0" prefHeight="408.0" prefWidth="1030.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="150.0" minWidth="150.0" prefWidth="150.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="220.0" minWidth="220.0" prefWidth="220.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="220.0" minWidth="220.0" prefWidth="220.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="220.0" minWidth="220.0" prefWidth="220.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="220.0" minWidth="220.0" prefWidth="220.0" />
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label prefHeight="21.0" prefWidth="74.0" text="Paso Año:" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+               <GridPane.margin>
+                  <Insets left="25.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <JFXComboBox fx:id="inputPasoAnio" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+               <GridPane.margin>
+                  <Insets left="150.0" />
+               </GridPane.margin>
+            </JFXComboBox>
+            <Label text="Cantidad Postes:" GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="25.0" />
+               </GridPane.margin>
+            </Label>
+            <JFXTextField fx:id="inputCantPostes" alignment="CENTER" focusColor="#27864d" maxWidth="40.0" prefWidth="40.0" style="text-align: right;" text=" " GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+               <GridPane.margin>
+                  <Insets left="150.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="poste1" alignment="CENTER" focusColor="#27864d" layoutX="258.0" layoutY="60.0" maxWidth="40.0" prefWidth="40.0" style="text-align: right;" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="6">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="60.0" />
+               </GridPane.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="poste2" alignment="CENTER" focusColor="#27864d" maxWidth="40.0" prefWidth="40.0" style="text-align: right;" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="150.0" />
+               </GridPane.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="poste3" alignment="CENTER" focusColor="#27864d" maxWidth="40.0" prefWidth="40.0" style="text-align: right;" GridPane.columnIndex="2" GridPane.rowIndex="6">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="35.0" />
+               </GridPane.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="poste4" alignment="CENTER" focusColor="#27864d" maxWidth="40.0" prefWidth="40.0" style="text-align: right;" GridPane.columnIndex="2" GridPane.rowIndex="6">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="140.0" />
+               </GridPane.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="poste5" alignment="CENTER" focusColor="#27864d" maxWidth="40.0" prefWidth="40.0" style="text-align: right;" GridPane.columnIndex="3" GridPane.rowIndex="6">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="35.0" />
+               </GridPane.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="poste6" alignment="CENTER" focusColor="#27864d" maxWidth="40.0" prefWidth="40.0" style="text-align: right;" GridPane.columnIndex="3" GridPane.rowIndex="6">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="140.0" />
+               </GridPane.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="poste7" alignment="CENTER" focusColor="#27864d" maxWidth="40.0" prefWidth="40.0" style="text-align: right;" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="7">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="60.0" />
+               </GridPane.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="poste8" alignment="CENTER" focusColor="#27864d" maxWidth="40.0" prefWidth="40.0" style="text-align: right;" GridPane.columnIndex="1" GridPane.rowIndex="7">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="150.0" />
+               </GridPane.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="poste9" alignment="CENTER" focusColor="#27864d" maxWidth="40.0" prefWidth="40.0" style="text-align: right;" GridPane.columnIndex="2" GridPane.rowIndex="7">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="35.0" />
+               </GridPane.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="poste10" alignment="CENTER" focusColor="#27864d" maxWidth="40.0" prefWidth="40.0" style="text-align: right;" GridPane.columnIndex="2" GridPane.rowIndex="7">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="140.0" />
+               </GridPane.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="poste11" alignment="CENTER" focusColor="#27864d" maxWidth="40.0" prefWidth="40.0" style="text-align: right;" GridPane.columnIndex="3" GridPane.rowIndex="7">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="35.0" />
+               </GridPane.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="poste12" alignment="CENTER" focusColor="#27864d" maxWidth="40.0" prefWidth="40.0" style="text-align: right;" GridPane.columnIndex="3" GridPane.rowIndex="7">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="140.0" />
+               </GridPane.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="poste13" alignment="CENTER" focusColor="#27864d" maxWidth="40.0" prefWidth="40.0" style="text-align: right;" GridPane.columnIndex="1" GridPane.rowIndex="8">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="60.0" />
+               </GridPane.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="poste14" alignment="CENTER" focusColor="#27864d" maxWidth="40.0" prefWidth="40.0" style="text-align: right;" GridPane.columnIndex="1" GridPane.rowIndex="8">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="150.0" />
+               </GridPane.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="poste15" alignment="CENTER" focusColor="#27864d" maxWidth="40.0" prefWidth="40.0" style="text-align: right;" GridPane.columnIndex="2" GridPane.rowIndex="8">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="35.0" />
+               </GridPane.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="poste16" alignment="CENTER" focusColor="#27864d" maxWidth="40.0" prefWidth="40.0" style="text-align: right;" GridPane.columnIndex="2" GridPane.rowIndex="8">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="140.0" />
+               </GridPane.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="poste17" alignment="CENTER" focusColor="#27864d" maxWidth="40.0" prefWidth="40.0" style="text-align: right;" GridPane.columnIndex="3" GridPane.rowIndex="8">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="35.0" />
+               </GridPane.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="poste18" alignment="CENTER" focusColor="#27864d" maxWidth="40.0" prefWidth="40.0" style="text-align: right;" GridPane.columnIndex="3" GridPane.rowIndex="8">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="140.0" />
+               </GridPane.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="poste19" alignment="CENTER" focusColor="#27864d" maxWidth="40.0" prefWidth="40.0" style="text-align: right;" GridPane.columnIndex="1" GridPane.rowIndex="9">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="60.0" />
+               </GridPane.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="poste20" alignment="CENTER" focusColor="#27864d" maxWidth="40.0" prefWidth="40.0" style="text-align: right;" GridPane.columnIndex="1" GridPane.rowIndex="9">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="150.0" />
+               </GridPane.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="poste21" alignment="CENTER" focusColor="#27864d" maxWidth="40.0" prefWidth="40.0" style="text-align: right;" GridPane.columnIndex="2" GridPane.rowIndex="9">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="35.0" />
+               </GridPane.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="poste22" alignment="CENTER" focusColor="#27864d" maxWidth="40.0" prefWidth="40.0" style="text-align: right;" GridPane.columnIndex="2" GridPane.rowIndex="9">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="140.0" />
+               </GridPane.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="poste23" alignment="CENTER" focusColor="#27864d" maxWidth="40.0" prefWidth="40.0" style="text-align: right;" GridPane.columnIndex="3" GridPane.rowIndex="9">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="35.0" />
+               </GridPane.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="poste24" alignment="CENTER" focusColor="#27864d" maxWidth="40.0" prefWidth="40.0" style="text-align: right;" GridPane.columnIndex="3" GridPane.rowIndex="9">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="140.0" />
+               </GridPane.margin>
+            </JFXTextField>
+            <JFXCheckBox fx:id="inputBloquesCronologicos" selected="true" text="Cronológico" GridPane.columnIndex="4" GridPane.rowIndex="3">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="30.0" />
+               </GridPane.margin>
+            </JFXCheckBox>
+            <Label text="Duración de postes en horas:" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.halignment="LEFT" GridPane.rowIndex="5">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="25.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="labelP1" prefHeight="21.0" prefWidth="38.0" text="P1" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="25.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="labelP7" prefHeight="21.0" prefWidth="38.0" text="P7" GridPane.columnIndex="1" GridPane.rowIndex="7">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="25.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="labelP13" prefHeight="21.0" prefWidth="38.0" text="P13" GridPane.columnIndex="1" GridPane.rowIndex="8">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="25.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="labelP19" prefHeight="21.0" prefWidth="38.0" text="P19" GridPane.columnIndex="1" GridPane.rowIndex="9">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="25.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="labelP2" prefHeight="21.0" prefWidth="38.0" text="P2" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="120.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="labelP8" prefHeight="21.0" prefWidth="38.0" text="P8" GridPane.columnIndex="1" GridPane.rowIndex="7">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="120.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="labelP14" prefHeight="21.0" prefWidth="38.0" text="P14" GridPane.columnIndex="1" GridPane.rowIndex="8">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="120.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="labelP20" prefHeight="21.0" prefWidth="38.0" text="P20" GridPane.columnIndex="1" GridPane.rowIndex="9">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="120.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="labelP3" prefHeight="21.0" prefWidth="38.0" text="P3" GridPane.columnIndex="2" GridPane.rowIndex="6">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="labelP9" prefHeight="21.0" prefWidth="38.0" text="P9" GridPane.columnIndex="2" GridPane.rowIndex="7">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="labelP15" prefHeight="21.0" prefWidth="38.0" text="P15" GridPane.columnIndex="2" GridPane.rowIndex="8">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="labelP21" prefHeight="21.0" prefWidth="38.0" text="P21" GridPane.columnIndex="2" GridPane.rowIndex="9">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="labelP4" prefHeight="21.0" prefWidth="38.0" text="P4" GridPane.columnIndex="2" GridPane.rowIndex="6">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="100.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="labelP10" prefHeight="21.0" prefWidth="38.0" text="P10" GridPane.columnIndex="2" GridPane.rowIndex="7">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="100.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="labelP16" prefHeight="21.0" prefWidth="38.0" text="P16" GridPane.columnIndex="2" GridPane.rowIndex="8">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="100.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="labelP22" prefHeight="21.0" prefWidth="38.0" text="P22" GridPane.columnIndex="2" GridPane.rowIndex="9">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="100.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="labelP5" prefHeight="21.0" prefWidth="38.0" text="P5" GridPane.columnIndex="3" GridPane.rowIndex="6">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="labelP11" prefHeight="21.0" prefWidth="38.0" text="P11" GridPane.columnIndex="3" GridPane.rowIndex="7">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="labelP17" prefHeight="21.0" prefWidth="38.0" text="P17" GridPane.columnIndex="3" GridPane.rowIndex="8">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="labelP23" prefHeight="21.0" prefWidth="38.0" text="P23" GridPane.columnIndex="3" GridPane.rowIndex="9">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="labelP6" prefHeight="21.0" prefWidth="38.0" text="P6" GridPane.columnIndex="3" GridPane.rowIndex="6">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="100.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="labelP12" prefHeight="21.0" prefWidth="38.0" text="P12" GridPane.columnIndex="3" GridPane.rowIndex="7">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="100.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="labelP18" prefHeight="21.0" prefWidth="38.0" text="P18" GridPane.columnIndex="3" GridPane.rowIndex="8">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="100.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="labelP24" prefHeight="21.0" prefWidth="38.0" text="P24" GridPane.columnIndex="3" GridPane.rowIndex="9">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="100.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Horas por paso:" GridPane.columnIndex="4" GridPane.rowIndex="6">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="30.0" />
+               </GridPane.margin>
+            </Label>
+            <JFXTextField fx:id="inputHorasPorPaso" alignment="CENTER" disable="true" focusColor="#27864d" maxWidth="40.0" prefWidth="40.0" style="text-align: right;" GridPane.columnIndex="4" GridPane.halignment="RIGHT" GridPane.rowIndex="6">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets right="30.0" />
+               </GridPane.margin>
+            </JFXTextField>
+            <Label fx:id="messageLabel" prefHeight="21.0" prefWidth="843.0" textAlignment="CENTER" textFill="#eb0505" GridPane.columnIndex="1" GridPane.columnSpan="4" GridPane.rowIndex="10" GridPane.valignment="BOTTOM">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="20.0" />
+               </GridPane.margin>
+            </Label>
+            <JFXButton fx:id="btnGuardar" buttonType="RAISED" ripplerFill="WHITE" style="-fx-background-color: #27864d;" text="Guardar" textFill="WHITE" GridPane.columnIndex="4" GridPane.halignment="RIGHT" GridPane.rowIndex="9">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </JFXButton>
+            <Label prefHeight="21.0" prefWidth="55.0" text="AÑO: " textAlignment="CENTER" textFill="#27864d" GridPane.halignment="LEFT" GridPane.rowIndex="5">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="80.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="lbAnio" prefHeight="21.0" prefWidth="55.0" textFill="#27864d" GridPane.halignment="LEFT" GridPane.rowIndex="6">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="80.0" />
+               </GridPane.margin>
+            </Label>
+            <JFXButton fx:id="btnCancelar" buttonType="RAISED" ripplerFill="WHITE" style="-fx-background-color: #27864d;" text="Cancelar" textFill="WHITE" GridPane.columnIndex="4" GridPane.rowIndex="9">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <Label text="Intervalo Muestreo:" GridPane.columnIndex="3" GridPane.rowIndex="4">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <padding>
+                  <Insets left="5.0" />
+               </padding>
+            </Label>
+            <JFXTextField fx:id="inputIntervaloMuestreo" alignment="CENTER" focusColor="#27864d" maxWidth="40.0" prefWidth="40.0" style="text-align: right;" text=" " GridPane.columnIndex="3" GridPane.halignment="LEFT" GridPane.rowIndex="4">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="150.0" />
+               </GridPane.margin>
+            </JFXTextField>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

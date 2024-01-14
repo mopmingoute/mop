@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<!--
+  ~ MOP Copyright (C) 2023 UTE Corporation
+  ~
+  ~ EditorImpoExpo.fxml is part of MOP.
+  ~
+  ~ MOP is free software: you can redistribute it and/or modify it under the terms
+  ~ of the GNU General Public License as published by the Free Software Foundation, either
+  ~ version 3 of the License, or (at your option) any later version.
+  ~
+  ~ MOP is distributed in the hope that it will be useful, but WITHOUT ANY
+  ~ WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+  ~ PARTICULAR PURPOSE. See the GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License along with MOP. If
+  ~ not, see <https://www.gnu.org/licenses/>.
+  -->
+
+<AnchorPane maxHeight="795.0" maxWidth="1795.0" minHeight="711.0" minWidth="1764.0" prefHeight="795.0" prefWidth="1768.0" style="-fx-background-color: #d7ddd9;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <GridPane fx:id="gridPane" layoutY="-24.0" prefHeight="785.0" prefWidth="883.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="885.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="220.0" minWidth="220.0" prefWidth="220.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="95.0" prefWidth="95.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="95.0" prefWidth="95.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="95.0" prefWidth="95.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="95.0" prefWidth="95.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="95.0" prefWidth="95.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="95.0" prefWidth="95.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="95.0" prefWidth="95.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="País:" GridPane.halignment="RIGHT" GridPane.rowIndex="5">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="10.0" right="5.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Nombre:" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="10.0" right="5.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Proceso Simulación:" GridPane.halignment="RIGHT" GridPane.rowIndex="13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="10.0" right="5.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Cmg:" GridPane.halignment="RIGHT" GridPane.rowIndex="12">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="10.0" right="5.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Proceso Optimización:" GridPane.halignment="RIGHT" GridPane.rowIndex="14">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="10.0" right="5.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Costo Fijo (USD/MWh):" textAlignment="RIGHT" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.halignment="RIGHT" GridPane.rowIndex="8">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="10.0" right="5.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Barra:" GridPane.columnIndex="4" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="10.0" right="5.0" />
+               </GridPane.margin>
+            </Label>
+            <JFXTextField fx:id="inputCostoFijo" focusColor="#27864d" maxWidth="85.0" minWidth="85.0" prefWidth="85.0" style="-fx-background-color: WHITE; -fx-font-size: 15px;" GridPane.columnIndex="5" GridPane.rowIndex="8">
+               <GridPane.margin>
+                  <Insets left="5.0" right="5.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="15.0" />
+               </font></JFXTextField>
+            <JFXComboBox fx:id="inputBarra" focusColor="#27864d" maxWidth="180.0" minWidth="180.0" prefWidth="180.0" promptText="Elija..." style="-fx-background-color: WHITE; -fx-font-size: 15px;" GridPane.columnIndex="5" GridPane.columnSpan="2" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets left="5.0" right="5.0" />
+               </GridPane.margin></JFXComboBox>
+            <JFXButton fx:id="inputCostoFijoEV" buttonType="RAISED" prefHeight="31.0" prefWidth="31.0" ripplerFill="WHITE" style="-fx-background-color: #27864d;" text="EV" textFill="WHITE" GridPane.columnIndex="6" GridPane.rowIndex="8">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </JFXButton>
+            <Separator prefWidth="880.0" GridPane.columnSpan="2147483647" GridPane.rowIndex="11">
+               <padding>
+                  <Insets right="3.0" />
+               </padding></Separator>
+            <Label prefHeight="40.0" prefWidth="2114.0" style="-fx-background-color: #27864d;" text="Datos Participante" textFill="WHITE" GridPane.columnSpan="2147483647">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+            <Label text="Tipo Impo Expo:" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.halignment="RIGHT" GridPane.rowIndex="5">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets right="5.0" />
+               </GridPane.margin>
+            </Label>
+            <JFXComboBox fx:id="inputPais" focusColor="#27864d" maxWidth="180.0" minWidth="180.0" prefWidth="180.0" promptText="Elija..." style="-fx-background-color: WHITE; -fx-font-size: 15px;" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </JFXComboBox>
+            <JFXComboBox fx:id="inputTipoImpoExpo" focusColor="#27864d" maxWidth="180.0" minWidth="180.0" prefWidth="180.0" promptText="Elija..." style="-fx-background-color: WHITE; -fx-font-size: 15px;" GridPane.columnIndex="5" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </JFXComboBox>
+            <Separator orientation="VERTICAL" prefHeight="200.0" GridPane.columnIndex="7" GridPane.halignment="RIGHT" GridPane.rowSpan="2147483647" />
+            <Label text="CompraVenta:" GridPane.halignment="RIGHT" GridPane.rowIndex="7">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets right="5.0" />
+               </GridPane.margin>
+            </Label>
+            <JFXRadioButton fx:id="inputOpCompra" text="Compra" GridPane.columnIndex="1" GridPane.rowIndex="7">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+               <toggleGroup>
+                  <ToggleGroup fx:id="toggleOpCompraVenta" />
+               </toggleGroup>
+            </JFXRadioButton>
+            <JFXRadioButton fx:id="inputOpVenta" text="Venta" toggleGroup="$toggleOpCompraVenta" GridPane.columnIndex="1" GridPane.rowIndex="8">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </JFXRadioButton>
+            <JFXComboBox fx:id="inputCmgProcSim" focusColor="#27864d" maxWidth="180.0" minWidth="180.0" prefWidth="180.0" promptText="Elija..." style="-fx-background-color: WHITE; -fx-font-size: 15px;" GridPane.columnIndex="1" GridPane.rowIndex="13">
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </JFXComboBox>
+            <JFXComboBox fx:id="inputCmgProcOpt" focusColor="#27864d" maxWidth="180.0" minWidth="180.0" prefWidth="180.0" promptText="Elija..." style="-fx-background-color: WHITE; -fx-font-size: 15px;" GridPane.columnIndex="1" GridPane.rowIndex="14">
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </JFXComboBox>
+            <Label text="Nombre:" GridPane.columnIndex="4" GridPane.halignment="RIGHT" GridPane.rowIndex="13">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets right="5.0" />
+               </GridPane.margin>
+            </Label>
+            <Separator prefWidth="885.0" GridPane.columnSpan="2147483647" GridPane.rowIndex="16" />
+            <Label text="Bloques:" GridPane.columnIndex="4" GridPane.halignment="RIGHT" GridPane.rowIndex="18">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets right="5.0" />
+               </GridPane.margin>
+            </Label>
+            <JFXTextField fx:id="inputNombre" focusColor="#27864d" maxWidth="180.0" minWidth="180.0" prefWidth="180.0" style="-fx-background-color: WHITE; -fx-font-size: 15px;" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </JFXTextField>
+            <JFXComboBox fx:id="inputCmgNombre" focusColor="#27864d" maxWidth="180.0" minWidth="180.0" prefWidth="180.0" promptText="Elija..." style="-fx-background-color: WHITE; -fx-font-size: 15px;" GridPane.columnIndex="5" GridPane.rowIndex="13">
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </JFXComboBox>
+            <Label text="Salida detallada:" GridPane.halignment="RIGHT" GridPane.rowIndex="18">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin>
+            </Label>
+            <JFXCheckBox fx:id="inputSalidaDetallada" text=" " GridPane.columnIndex="1" GridPane.rowIndex="18">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </JFXCheckBox>
+            <Label text="Mínimo Técnico:" textAlignment="RIGHT" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.halignment="RIGHT" GridPane.rowIndex="9">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="10.0" right="5.0" />
+               </GridPane.margin>
+            </Label>
+            <JFXTextField fx:id="inputMinimoTecnico" focusColor="#27864d" maxWidth="85.0" minWidth="85.0" prefWidth="85.0" style="-fx-background-color: WHITE; -fx-font-size: 15px;" GridPane.columnIndex="5" GridPane.rowIndex="9">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="5.0" right="5.0" />
+               </GridPane.margin>
+            </JFXTextField>
+            <JFXButton fx:id="inputMinimoTecnicoEV" buttonType="RAISED" prefHeight="31.0" prefWidth="31.0" ripplerFill="WHITE" style="-fx-background-color: #27864d;" text="EV" textFill="WHITE" GridPane.columnIndex="6" GridPane.rowIndex="9">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </JFXButton>
+            <Label alignment="CENTER_RIGHT" text="Hay mímimo técnico:" textAlignment="RIGHT" GridPane.halignment="RIGHT" GridPane.rowIndex="9">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets right="5.0" />
+               </GridPane.margin>
+            </Label>
+            <JFXCheckBox fx:id="inputHayMinimoTecnico" text=" " GridPane.columnIndex="1" GridPane.rowIndex="9">
+               <GridPane.margin>
+                  <Insets left="10.0" />
+               </GridPane.margin>
+            </JFXCheckBox>
+            <Label text="Factor Escalamiento:" textAlignment="JUSTIFY" GridPane.columnIndex="3" GridPane.columnSpan="2" GridPane.halignment="RIGHT" GridPane.rowIndex="14">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets right="5.0" />
+               </GridPane.margin>
+            </Label>
+            <JFXTextField fx:id="inputCmgFactorEscalamiento" focusColor="#27864d" maxWidth="85.0" minWidth="85.0" prefWidth="85.0" style="-fx-background-color: WHITE; -fx-font-size: 15px;" GridPane.columnIndex="5" GridPane.rowIndex="14">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="5.0" right="5.0" />
+               </GridPane.margin>
+            </JFXTextField>
+            <JFXButton fx:id="inputCmgFactorEscalamientoEV" buttonType="RAISED" prefHeight="31.0" prefWidth="31.0" ripplerFill="WHITE" style="-fx-background-color: #27864d;" text="EV" textFill="WHITE" GridPane.columnIndex="6" GridPane.rowIndex="14">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </JFXButton>
+            <JFXButton fx:id="btnAddBloque" buttonType="RAISED" ripplerFill="WHITE" style="-fx-background-color: #27468d;" text="+" textFill="WHITE" GridPane.columnIndex="5" GridPane.halignment="RIGHT" GridPane.rowIndex="18">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets right="5.0" />
+               </GridPane.margin>
+            </JFXButton>
+            <JFXButton fx:id="btnRemoveBloque" buttonType="RAISED" prefWidth="38.0" ripplerFill="WHITE" style="-fx-background-color: #c91717;" text="-" textFill="WHITE" GridPane.columnIndex="5" GridPane.rowIndex="18">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </JFXButton>
+            <Label text="Cantidad Módulos Instalados: " textAlignment="RIGHT" GridPane.columnIndex="2" GridPane.columnSpan="3" GridPane.halignment="RIGHT" GridPane.rowIndex="7">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets right="5.0" />
+               </GridPane.margin>
+            </Label>
+            <JFXTextField fx:id="inputCantModInst" focusColor="#27864d" maxWidth="85.0" minWidth="85.0" prefWidth="85.0" style="-fx-background-color: WHITE; -fx-font-size: 15px;" GridPane.columnIndex="5" GridPane.rowIndex="7">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="5.0" right="5.0" />
+               </GridPane.margin>
+            </JFXTextField>
+            <JFXButton fx:id="inputCantModInstEV" buttonType="RAISED" prefHeight="31.0" prefWidth="31.0" ripplerFill="WHITE" style="-fx-background-color: #27864d;" text="EV" textFill="WHITE" GridPane.columnIndex="6" GridPane.rowIndex="7">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="5.0" />
+               </GridPane.margin>
+            </JFXButton>
+         </children>
+      </GridPane>
+      <GridPane fx:id="gridPane1" layoutX="883.0" prefHeight="40.0" prefWidth="885.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="220.0" minWidth="220.0" prefWidth="220.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="95.0" prefWidth="95.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="95.0" prefWidth="95.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="95.0" prefWidth="95.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="95.0" prefWidth="95.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="95.0" prefWidth="95.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="95.0" prefWidth="95.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="95.0" prefWidth="95.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label layoutY="-24.0" prefHeight="904.0" prefWidth="2114.0" style="-fx-background-color: #27864d;" text="Bloques" textFill="WHITE" GridPane.columnSpan="2147483647">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </Label>
+         </children>
+      </GridPane>
+      <GridPane fx:id="gridPane11" layoutX="893.0" layoutY="10.0" prefHeight="54.0" prefWidth="885.0" AnchorPane.bottomAnchor="0.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="220.0" minWidth="220.0" prefWidth="220.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="95.0" prefWidth="95.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="95.0" prefWidth="95.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="95.0" prefWidth="95.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="95.0" prefWidth="95.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="95.0" prefWidth="95.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="95.0" prefWidth="95.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.0" minWidth="95.0" prefWidth="95.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <JFXButton fx:id="inputCancelar" buttonType="RAISED" prefWidth="90.0" ripplerFill="WHITE" style="-fx-background-color: #27864d;" text="Cancelar" textFill="WHITE" GridPane.columnIndex="5" GridPane.valignment="TOP">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="inputAceptar" buttonType="RAISED" prefWidth="90.0" ripplerFill="WHITE" style="-fx-background-color: #27864d;" text="Aceptar" textFill="WHITE" GridPane.columnIndex="6" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.valignment="TOP">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets right="40.0" />
+               </GridPane.margin>
+            </JFXButton>
+            <JFXButton fx:id="btnGuardarEnBiblioteca" buttonType="RAISED" prefWidth="210.0" ripplerFill="WHITE" style="-fx-background-color: #27864d;" text="Guardar en Biblioteca" textFill="WHITE" GridPane.columnIndex="2" GridPane.columnSpan="3" GridPane.valignment="TOP">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <Label fx:id="messageLabel" maxWidth="300.0" text="  " textFill="#eb0a0a" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.valignment="TOP">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+      <ScrollPane layoutX="883.0" layoutY="40.0" prefHeight="675.0" prefWidth="885.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefWidth="870.0">
+               <children>
+                  <VBox fx:id="vBoxBloques" layoutX="122.0" layoutY="49.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,12 @@
+/bin/
+/bin/
+/.classpath
+
+/.project
+/.Modelopadmin.iml
+/.settings/
+/hs_err_pid15764.log
+/.idea/
+/hs_err_pid7544.log
+/hs_err_pid8644.log
+/target/

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<!--
+  ~ MOP Copyright (C) 2023 UTE Corporation
+  ~
+  ~ BloqueLineaDeTiempo.fxml is part of MOP.
+  ~
+  ~ MOP is free software: you can redistribute it and/or modify it under the terms
+  ~ of the GNU General Public License as published by the Free Software Foundation, either
+  ~ version 3 of the License, or (at your option) any later version.
+  ~
+  ~ MOP is distributed in the hope that it will be useful, but WITHOUT ANY
+  ~ WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+  ~ PARTICULAR PURPOSE. See the GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License along with MOP. If
+  ~ not, see <https://www.gnu.org/licenses/>.
+  -->
+
+<!--<TitledPane fx:id="titledPane" animated="false" text="Bloque 1" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfaz.BloqueLineaDeTiempoController">-->
+<!--<TitledPane fx:id="titledPane" animated="false" text="Bloque 1" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfaz.BloqueLineaDeTiempoController">-->
+
+<TitledPane fx:id="titledPane" animated="false" text="Bloque 1" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <content>
+        <AnchorPane fx:id="anchorPaneBloque" minHeight="288.0" minWidth="0.0" prefHeight="288.0" prefWidth="981.0">
+            <children>
+                <GridPane fx:id="gridPaneBloque" layoutX="192.0" layoutY="99.0" prefWidth="981.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="180.0" minWidth="10.0" prefWidth="90.00000762939453" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="85.0" minWidth="10.0" prefWidth="85.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="85.0" minWidth="10.0" prefWidth="85.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="85.0" minWidth="10.0" prefWidth="85.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="85.0" minWidth="10.0" prefWidth="85.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="85.0" minWidth="10.0" prefWidth="85.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="85.0" minWidth="10.0" prefWidth="85.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="85.0" minWidth="10.0" prefWidth="85.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="85.0" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="85.0" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="25.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="25.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="25.0" minHeight="25.0" prefHeight="25.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <Label text="Cantidad de Pasos:" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                            <GridPane.margin>
+                                <Insets left="10.0" />
+                            </GridPane.margin></Label>
+                        <Label text="Duración Paso:" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                            <GridPane.margin>
+                                <Insets left="10.0" />
+                            </GridPane.margin></Label>
+                        <Label text="Intervalo de Muestreo:" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                            <GridPane.margin>
+                                <Insets left="10.0" />
+                            </GridPane.margin></Label>
+                        <Label text="Duración Postes:" GridPane.halignment="RIGHT" GridPane.rowIndex="7">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                            <GridPane.margin>
+                                <Insets left="10.0" />
+                            </GridPane.margin></Label>
+                        <Label text="Período Bloque:" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                            <GridPane.margin>
+                                <Insets left="10.0" />
+                            </GridPane.margin></Label>
+                        <Label text="Cantidad de Postes:" GridPane.halignment="RIGHT" GridPane.rowIndex="5">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                            <GridPane.margin>
+                                <Insets left="10.0" />
+                            </GridPane.margin></Label>
+                        <JFXTextField fx:id="inputCantPasos" focusColor="#27864d" maxWidth="75.0" prefWidth="75.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                            <GridPane.margin>
+                                <Insets left="10.0" right="10.0" />
+                            </GridPane.margin>
+                        </JFXTextField>
+                        <JFXTextField fx:id="inputIntervaloMuestreo" focusColor="#27864d" maxWidth="75.0" prefWidth="75.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                            <GridPane.margin>
+                                <Insets left="10.0" right="10.0" />
+                            </GridPane.margin>
+                        </JFXTextField>
+                        <JFXTextField focusColor="#27864d" maxWidth="75.0" prefWidth="75.0" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="7">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                            <GridPane.margin>
+                                <Insets left="10.0" right="10.0" />
+                            </GridPane.margin>
+                        </JFXTextField>
+                        <JFXTextField fx:id="inputPeriodoBloque" focusColor="#27864d" maxWidth="75.0" prefWidth="75.0" GridPane.columnIndex="6" GridPane.rowIndex="3">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                            <GridPane.margin>
+                                <Insets left="10.0" right="10.0" />
+                            </GridPane.margin>
+                        </JFXTextField>
+                        <JFXTextField fx:id="inputDuracionPaso" focusColor="#27864d" maxWidth="75.0" prefWidth="75.0" GridPane.columnIndex="6" GridPane.rowIndex="1">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                            <GridPane.margin>
+                                <Insets left="10.0" right="10.0" />
+                            </GridPane.margin>
+                        </JFXTextField>
+                        <JFXTextField fx:id="inputCantPostes" focusColor="#27864d" maxWidth="75.0" prefWidth="75.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                            <GridPane.margin>
+                                <Insets left="10.0" right="10.0" />
+                            </GridPane.margin>
+                        </JFXTextField>
+                        <JFXTextField focusColor="#27864d" maxWidth="75.0" prefWidth="75.0" visible="false" GridPane.columnIndex="2" GridPane.rowIndex="7">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                            <GridPane.margin>
+                                <Insets left="10.0" right="10.0" />
+                            </GridPane.margin>
+                        </JFXTextField>
+                        <JFXTextField focusColor="#27864d" maxWidth="75.0" prefWidth="75.0" visible="false" GridPane.columnIndex="3" GridPane.rowIndex="7">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                            <GridPane.margin>
+                                <Insets left="10.0" right="10.0" />
+                            </GridPane.margin>
+                        </JFXTextField>
+                        <JFXTextField focusColor="#27864d" maxWidth="75.0" prefWidth="75.0" visible="false" GridPane.columnIndex="4" GridPane.rowIndex="7">
+                            <font>
+                                <Font size="15.0" />
+                            </font>
+                            <GridPane.margin>
+                                <Insets left="10.0" right="10.0" />
+                            </GridPane.margin>
+                        </JFXTextField>
+                        <JFXComboBox fx:id="inputDuracionPasoUnidad" focusColor="#27864d" prefWidth="120.0" GridPane.columnIndex="7" GridPane.columnSpan="2" GridPane.rowIndex="1">
+                            <GridPane.margin>
+                                <Insets left="10.0" />
+                            </GridPane.margin>
+                        </JFXComboBox>
+                        <JFXComboBox fx:id="inputIntervaloMuestreoUnidad" focusColor="#27864d" prefHeight="25.0" prefWidth="120.0" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="3">
+                            <GridPane.margin>
+                                <Insets left="10.0" />
+                            </GridPane.margin>
+                        </JFXComboBox>
+                        <JFXComboBox focusColor="#27864d" prefHeight="25.0" prefWidth="120.0" visible="false" GridPane.columnIndex="5" GridPane.columnSpan="2" GridPane.rowIndex="7">
+                            <GridPane.margin>
+                                <Insets left="10.0" />
+                            </GridPane.margin>
+                        </JFXComboBox>
+                        <JFXButton fx:id="closeButton" buttonType="RAISED" prefHeight="40.0" prefWidth="39.0" ripplerFill="WHITE" style="-fx-background-color: #c91717;" text="X" textFill="WHITE" GridPane.columnIndex="9" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                        <font>
+                        <Font name="System Bold" size="17.0" />
+                        </font></JFXButton>
+                        <JFXRadioButton fx:id="inputEsMonotono" selected="true" text="Monótono" GridPane.columnIndex="5" GridPane.columnSpan="2" GridPane.rowIndex="5">
+                        <font>
+                        <Font size="15.0" />
+                        </font>
+                        <toggleGroup>
+                        <ToggleGroup fx:id="esCrono" />
+                        </toggleGroup>
+                        </JFXRadioButton>
+                        <JFXRadioButton fx:id="inputEsCronologico" text="Cronológico" toggleGroup="$esCrono" GridPane.columnIndex="7" GridPane.columnSpan="2" GridPane.rowIndex="5">
+                        <font>
+                        <Font size="15.0" />
+                        </font>
+                        </JFXRadioButton>
+                        <JFXComboBox fx:id="inputDuracionPostesUnidad" focusColor="#27864d" prefWidth="120.0" GridPane.columnIndex="8" GridPane.columnSpan="2" GridPane.rowIndex="7">
+                            <GridPane.margin>
+                                <Insets left="10.0" />
+                            </GridPane.margin>
+                        </JFXComboBox>
+                  <Label fx:id="messageLabel" prefHeight="21.0" prefWidth="836.0" textFill="#eb0505" GridPane.columnSpan="9">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin>
+                  </Label>
+                    </children>
+                </GridPane>
+            </children>
+        </AnchorPane>
+    </content>
+</TitledPane>

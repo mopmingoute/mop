@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import de.jensd.fx.glyphs.materialicons.MaterialIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<!--
+  ~ MOP Copyright (C) 2023 UTE Corporation
+  ~
+  ~ CargaProcesosEstocasticos.fxml is part of MOP.
+  ~
+  ~ MOP is free software: you can redistribute it and/or modify it under the terms
+  ~ of the GNU General Public License as published by the Free Software Foundation, either
+  ~ version 3 of the License, or (at your option) any later version.
+  ~
+  ~ MOP is distributed in the hope that it will be useful, but WITHOUT ANY
+  ~ WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+  ~ PARTICULAR PURPOSE. See the GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License along with MOP. If
+  ~ not, see <https://www.gnu.org/licenses/>.
+  -->
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="670.0" prefWidth="1154.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TitledPane animated="false" layoutX="1.0" layoutY="1.0" prefHeight="917.0" prefWidth="1905.0" text="Procesos Estocásticos">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="891.0" prefWidth="1843.0">
+               <children>
+                  <GridPane layoutX="769.6" layoutY="68.6" prefHeight="188.0" prefWidth="721.0" AnchorPane.bottomAnchor="644.0" AnchorPane.leftAnchor="760.0" AnchorPane.rightAnchor="422.0" AnchorPane.topAnchor="59.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="180.0" prefWidth="150.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="258.0" minWidth="258.0" prefWidth="258.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="258.0" minWidth="258.0" prefWidth="258.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <Label text="Tipo:">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="5.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label text="Proceso:" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="5.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <JFXComboBox fx:id="inputTipoPE" focusColor="#27864d" prefHeight="25.0" prefWidth="249.0" style="-fx-background-color: WHITE;" GridPane.columnIndex="1" />
+                        <JFXCheckBox fx:id="inputDiscretoExhaustivoPE" selected="true" text="Discreto Exhaustivo" GridPane.rowIndex="2" GridPane.valignment="BOTTOM">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin>
+                        </JFXCheckBox>
+                        <JFXCheckBox fx:id="inputMuestradoPE" selected="true" text="Muestreado" GridPane.rowIndex="3" GridPane.valignment="BOTTOM">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin>
+                        </JFXCheckBox>
+                        <JFXButton fx:id="inputCargarPE" alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" prefWidth="75.0" ripplerFill="WHITE" style="-fx-background-color: #27864d;" text="Cargar" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets right="10.0" />
+                           </GridPane.margin>
+                        </JFXButton>
+                        <JFXComboBox fx:id="inputNombreProceso" focusColor="#27864d" prefHeight="25.0" prefWidth="249.0" style="-fx-background-color: WHITE;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <JFXButton fx:id="infoTipoProceso" ripplerFill="#d7ddd900" text=" " GridPane.columnIndex="2">
+                           <graphic>
+                              <MaterialIconView fill="#836f6b" glyphName="HELP" size="17" />
+                           </graphic>
+                           <tooltip>
+                              <Tooltip />
+                           </tooltip>
+                        </JFXButton>
+                        <JFXButton fx:id="infoProceso" ripplerFill="#d7ddd900" text=" " GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <graphic>
+                              <MaterialIconView fill="#836f6b" glyphName="HELP" size="17" />
+                           </graphic>
+                           <tooltip>
+                              <Tooltip />
+                           </tooltip>
+                        </JFXButton>
+                     </children>
+                  </GridPane>
+                  <Label fx:id="messageLabel" layoutX="654.0" layoutY="781.0" prefHeight="21.0" prefWidth="649.0" textFill="#eb0505">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <ScrollPane layoutX="771.0" layoutY="293.0" prefHeight="463.0" prefWidth="503.0">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefWidth="482.0">
+                           <children>
+                              <VBox fx:id="vBoxPronosticos" alignment="TOP_CENTER" layoutX="31.0" layoutY="16.0" prefHeight="4.0" prefWidth="434.0" />
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </ScrollPane>
+                  <Label layoutX="770.0" layoutY="261.0" text="Pronósticos:">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </content>
+      </TitledPane>
+      <TableView fx:id="tableViewPE" editable="true" layoutY="31.0" prefHeight="886.0" prefWidth="513.0" style="-fx-font-size: 15px;" />
+   </children>
+</AnchorPane>
